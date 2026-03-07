@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jimin — Portfolio</title>
+  <meta name="description" content="Jimin's portfolio — solo-built interactive projects, game systems, and language-learning web experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a href="#top" class="brand">Jimin</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section reveal">
+        <div class="eyebrow">PORTFOLIO / SOLO BUILDER</div>
+        <h1>
+          Hello, I’m <span class="name-accent">Jimin</span>.<br />
+          I build small but complete interactive experiences.
+        </h1>
+        <p class="hero-copy">
+          I design and develop web-based learning products, gameplay systems, and compact prototypes from start to finish.
+          My focus is making things feel clear, playable, and alive.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View selected work</a>
+          <a class="btn btn-secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-note">
+          <span>Currently exploring:</span>
+          <ul>
+            <li>Game-feel in web interfaces</li>
+            <li>Playable portfolio ideas</li>
+            <li>Language-learning interactions</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="work" class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-label">SELECTED WORK</p>
+            <h2>Projects I designed and built myself.</h2>
+          </div>
+          <p class="section-summary">
+            A small set of projects, but each one was made end-to-end with a strong focus on interaction, structure, and system design.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured">
+            <div class="project-visual visual-wow">
+              <div class="mock-window">
+                <div class="mock-bar"></div>
+                <div class="mock-content language-ui">
+                  <span class="pill">JA</span>
+                  <span class="pill">FR</span>
+                  <span class="pill active">GAME</span>
+                  <div class="quiz-block"></div>
+                  <div class="quiz-row"></div>
+                  <div class="quiz-row short"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Web Product</span>
+                <span>Solo</span>
+              </div>
+              <h3>World of Words</h3>
+              <p>
+                A language-learning website that combines study flows with game-like interaction. Includes multiple language directions,
+                configurable quiz structure, review loops, and a dedicated game area.
+              </p>
+              <ul class="tag-list">
+                <li>HTML/CSS/JS</li>
+                <li>Learning UX</li>
+                <li>Game-inspired UI</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://www.world-of-words.org" target="_blank" rel="noreferrer">Visit live site</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-pong">
+              <div class="arena">
+                <div class="paddle left"></div>
+                <div class="paddle right"></div>
+                <div class="ball"></div>
+                <div class="trail"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Prototype</span>
+                <span>Gameplay System</span>
+              </div>
+              <h3>Pong Smash</h3>
+              <p>
+                A Pong variation where I added a timing-based smash mechanic, clearer match flow, and a stronger arcade feeling through speed,
+                impact, and rally pressure.
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Game logic</li>
+                <li>Moment-to-moment feel</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-space">
+              <div class="space-panel">
+                <div class="ship ship-a"></div>
+                <div class="ship ship-b"></div>
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="laser"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>Prototype</span>
+                <span>2P Action</span>
+              </div>
+              <h3>Space Duel</h3>
+              <p>
+                A small competitive game with two-player controls, shooting, pickups, temporary buffs, and escalating combat rhythm.
+                I built the rules, implementation, and balancing structure myself.
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Combat systems</li>
+                <li>Solo development</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section split-section reveal">
+        <div>
+          <p class="section-label">ABOUT</p>
+          <h2>I like building compact systems that feel thoughtful.</h2>
+        </div>
+        <div class="about-content">
+          <p>
+            I’m especially interested in projects where design and logic meet: interfaces that feel playful, mechanics that create clear feedback,
+            and learning experiences that become more engaging through interaction.
+          </p>
+          <p>
+            Even when a project is small, I want it to feel complete. That usually means I handle the idea, structure, UI, rules, and implementation myself.
+          </p>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head compact">
+          <div>
+            <p class="section-label">STRENGTHS</p>
+            <h2>What I tend to care about most.</h2>
+          </div>
+        </div>
+        <div class="strength-grid">
+          <article>
+            <h3>Interaction clarity</h3>
+            <p>I try to make systems readable — what the user can do, what changed, and why it matters.</p>
+          </article>
+          <article>
+            <h3>Game-like thinking</h3>
+            <p>I naturally think in loops, feedback, tension, pacing, and reward, even in non-game interfaces.</p>
+          </article>
+          <article>
+            <h3>Solo execution</h3>
+            <p>I am comfortable taking a small project from concept to a functioning, usable result on my own.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section reveal">
+        <p class="section-label">CONTACT</p>
+        <h2>Let’s make something thoughtful and interactive.</h2>
+        <p>
+          You can reach me for collaboration, internships, or just to talk about game systems, learning products, and web interaction.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:your-email@example.com">your-email@example.com</a>
+          <a href="https://github.com/your-github" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Jimin. Built with HTML, CSS, and JS.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
