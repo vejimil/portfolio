@@ -87,7 +87,7 @@ const portfolioData = {
         ],
         sections: [
           {
-            heading: 'Pong Smash',
+            heading: 'Ping-Pong Smash',
             type: 'paragraph',
             content:
               'Pong Smash reworks a familiar base game by adding a timing-based smash action. The goal was to turn a simple rally into something with stronger momentum shifts, sharper impact, and more dramatic exchanges.'
