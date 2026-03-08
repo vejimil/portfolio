@@ -1,230 +1,184 @@
-const projectItems = [
-  {
-    id: 'world-of-words',
-    featured: true,
-    label: 'Web Product',
-    title: 'World of Words',
-    blurb:
-      'A language-learning website that combines study flows with game-like interaction, review structure, and playful UI decisions.',
-    meta: ['Solo Build', 'HTML/CSS/JS'],
-    tags: ['Learning UX', 'Game-inspired UI', 'Expandable Structure'],
-    visual: 'wow',
-    detail: {
-      kicker: 'Project / World of Words',
-      summary:
-        'World of Words is a solo-built language-learning platform where I combine study tools with interaction design inspired by games.',
-      sections: [
-        {
-          heading: 'Overview',
-          type: 'paragraph',
-          content:
-            'I designed the site to make vocabulary practice feel clearer, more engaging, and easier to return to. The structure supports multiple language directions, reusable content, and different quiz or game formats.'
-        },
-        {
-          heading: 'What I handled',
-          type: 'list',
-          content: [
-            'Information structure and study flow design',
-            'Interface design and interaction feedback',
-            'Front-end implementation and content organization',
-            'Planning for expandable mini-game features'
-          ]
-        },
-        {
-          heading: 'What matters most here',
-          type: 'paragraph',
-          content:
-            'The core idea is not only teaching words, but making the experience feel active. I care about pacing, clear response, and a sense that each interaction has intention.'
-        }
-      ],
-      links: [
-        {
-          label: 'Visit live site',
-          href: 'https://www.world-of-words.org'
-        }
-      ]
-    }
-  },
-  {
-    id: 'pong-smash',
-    featured: false,
-    label: 'Prototype',
-    title: 'Pong Smash',
-    blurb:
-      'A Pong variation with a timing-based smash mechanic, clearer rally rhythm, and stronger arcade feedback.',
-    meta: ['Gameplay System', 'Python'],
-    tags: ['Arcade Feel', 'Moment-to-moment Tension', 'Solo Prototype'],
-    visual: 'pong',
-    detail: {
-      kicker: 'Project / Pong Smash',
-      summary:
-        'Pong Smash started from a familiar base, then I pushed the interaction so each exchange could feel more dramatic and deliberate.',
-      sections: [
-        {
-          heading: 'Design focus',
-          type: 'paragraph',
-          content:
-            'I wanted a simple competitive game to feel more exciting through timing, impact, and momentum. The smash mechanic changes the pace of a rally and gives the player a more expressive action than a normal return.'
-        },
-        {
-          heading: 'What I explored',
-          type: 'list',
-          content: [
-            'How a single added mechanic can reshape a classic loop',
-            'How feedback and speed can create stronger match tension',
-            'How small systems can still feel polished and intentional'
-          ]
-        },
-        {
-          heading: 'Why it matters',
-          type: 'paragraph',
-          content:
-            'This project reflects how I think as a designer: start from a readable core, then strengthen the feel through focused system changes rather than unnecessary complexity.'
-        }
-      ],
-      links: []
-    }
-  },
-  {
-    id: 'space-duel',
-    featured: false,
-    label: 'Prototype',
-    title: 'Space Duel',
-    blurb:
-      'A compact two-player action game with pickups, temporary buffs, and combat pacing built for quick rivalry.',
-    meta: ['2P Action', 'Python'],
-    tags: ['Combat Systems', 'Balancing', 'Play Rhythm'],
-    visual: 'space',
-    detail: {
-      kicker: 'Project / Space Duel',
-      summary:
-        'Space Duel is a small competitive project where I focused on readable action, shifting power moments, and short-form tension between two players.',
-      sections: [
-        {
-          heading: 'Overview',
-          type: 'paragraph',
-          content:
-            'The goal was to create a duel that feels lively even at a small scale. Temporary advantages, pickups, and movement pressure help the match keep changing instead of staying flat.'
-        },
-        {
-          heading: 'What I handled',
-          type: 'list',
-          content: [
-            'Rule planning and player interaction design',
-            'Implementation of combat and buff systems',
-            'Tuning of pacing, pressure, and readability'
-          ]
-        },
-        {
-          heading: 'Design takeaway',
-          type: 'paragraph',
-          content:
-            'I enjoy turning a small ruleset into something that still has variety and drama. This project is one example of that approach.'
-        }
-      ],
-      links: []
-    }
-  }
-];
+/*
+  ============================
+  EASY CONTENT EDITING GUIDE
+  ============================
+  1) Add or remove project cards in portfolioData.projects.
+  2) Update the About Me page in portfolioData.about.
+  3) Main page cards and detail pages are rendered from the same data.
+  4) Each project opens its own HTML file, such as world-of-words.html.
+*/
 
-const aboutItems = [
-  {
-    id: 'design-focus',
-    icon: '✦',
-    label: 'Design Focus',
-    title: 'Thoughtful interaction',
-    blurb:
-      'I like interfaces and systems that feel clear, responsive, and quietly playful.',
-    chips: ['Clarity', 'Feedback', 'Flow'],
-    detail: {
-      kicker: 'About / Design Focus',
-      summary:
-        'I am especially interested in the meeting point between structure and feeling: how a user understands a system, and how that system feels to use.',
-      sections: [
-        {
-          heading: 'What I value',
-          type: 'list',
-          content: [
-            'Clear next actions and readable state changes',
-            'Feedback that feels satisfying rather than noisy',
-            'Simple systems with enough depth to stay interesting'
+const portfolioData = {
+  projects: [
+    {
+      id: 'world-of-words',
+      page: 'world-of-words.html',
+      label: 'Web Project',
+      title: 'World of Words',
+      blurb:
+        'A language-learning site that combines structure, playful interaction, and mini-game thinking.',
+      caption:
+        'Built as a solo project with attention to clarity, flow, and interactive feedback.',
+      meta: ['Interactive Learning', 'Web Design', 'Solo Build'],
+      tags: ['Game-like Learning', 'UX Flow', 'Frontend Implementation'],
+      detail: {
+        kicker: 'Project',
+        subtitle: 'A language-learning experience shaped by interaction, structure, and play.',
+        summary:
+          'World of Words is a personal project focused on making vocabulary practice feel more active and engaging. I approached it as both a learning product and an interactive design problem.',
+        overview: [
+          'I designed the site around the idea that studying becomes stronger when the experience feels clear, responsive, and enjoyable.',
+          'Instead of treating learning content as static information, I organized it so the interface itself supports rhythm, motivation, and experimentation.'
+        ],
+        sections: [
+          {
+            heading: 'What I focused on',
+            type: 'list',
+            content: [
+              'Information structure for study flow and content browsing',
+              'Interface choices that keep the experience readable and inviting',
+              'Interactive elements that make learning feel more alive',
+              'Expandable mini-game planning for future growth'
+            ]
+          },
+          {
+            heading: 'Why this project matters to me',
+            type: 'paragraph',
+            content:
+              'This project shows how I like to work: start with a useful idea, strengthen the experience through interaction, and make the final result feel thoughtful rather than overloaded.'
+          }
+        ],
+        sidebar: {
+          role: 'Designer / Builder',
+          stack: ['HTML', 'CSS', 'JavaScript'],
+          notes: [
+            'Solo-built and continuously expandable',
+            'Focused on interaction design and usability',
+            'Good example of my interest in playful digital products'
           ]
         },
-        {
-          heading: 'Why this matters to me',
-          type: 'paragraph',
-          content:
-            'Even a very small project can feel memorable when the interaction has rhythm and intention. I care about that feeling a lot.'
-        }
-      ],
-      links: []
-    }
-  },
-  {
-    id: 'strengths',
-    icon: '◆',
-    label: 'Strengths',
-    title: 'Game-like thinking',
-    blurb:
-      'I naturally think in loops, pacing, reward, tension, and user response.',
-    chips: ['Systems', 'Pacing', 'Readability'],
-    detail: {
-      kicker: 'About / Strengths',
-      summary:
-        'My strengths usually show up when a project needs both structure and feel — especially when interaction design needs to become more alive.',
-      sections: [
-        {
-          heading: 'Core strengths',
-          type: 'list',
-          content: [
-            'Turning rough ideas into workable interaction systems',
-            'Thinking about feedback, rhythm, and user motivation',
-            'Keeping a project compact but still complete'
+        links: [
+          {
+            label: 'Visit Live Site',
+            href: 'https://www.world-of-words.org'
+          }
+        ]
+      }
+    },
+    {
+      id: 'arcade-games',
+      page: 'arcade-games.html',
+      label: 'Game Prototype Set',
+      title: 'Arcade Games',
+      blurb:
+        'A combined showcase of fast, readable prototypes built around tension, timing, and satisfying feedback.',
+      caption:
+        'This page brings together Pong Smash and Space Duel under one arcade-focused project group.',
+      meta: ['Gameplay Systems', 'Prototype Design', 'Solo Development'],
+      tags: ['Arcade Feel', 'Pacing', 'Competitive Interaction'],
+      detail: {
+        kicker: 'Project',
+        subtitle: 'Small-scale game prototypes built to explore feel, pacing, and competitive energy.',
+        summary:
+          'Arcade Games is a grouped project page for my action-focused prototypes. Each game starts from a simple loop, then pushes that loop through timing, pressure, and stronger player feedback.',
+        overview: [
+          'I enjoy building compact systems that still feel expressive. These projects focus less on size and more on how a short interaction can become memorable.',
+          'Both prototypes helped me think more carefully about pace, readability, and how one added mechanic can reshape the whole experience.'
+        ],
+        sections: [
+          {
+            heading: 'Pong Smash',
+            type: 'paragraph',
+            content:
+              'Pong Smash reworks a familiar base game by adding a timing-based smash action. The goal was to turn a simple rally into something with stronger momentum shifts, sharper impact, and more dramatic exchanges.'
+          },
+          {
+            heading: 'Space Duel',
+            type: 'paragraph',
+            content:
+              'Space Duel is a compact two-player action prototype built around pressure, buffs, and quick power swings. I focused on keeping the combat readable while making each round feel active and unstable in a good way.'
+          },
+          {
+            heading: 'Shared design themes',
+            type: 'list',
+            content: [
+              'Readable systems with a stronger sense of impact',
+              'Short play loops that still create tension and variation',
+              'Careful attention to rhythm, feedback, and player response',
+              'Solo prototyping from concept to implementation'
+            ]
+          }
+        ],
+        sidebar: {
+          role: 'Game Designer / Prototype Builder',
+          stack: ['Python', 'Gameplay Logic', 'Balancing'],
+          notes: [
+            'Includes Pong Smash and Space Duel',
+            'Focused on gameplay feel and interaction tuning',
+            'Represents my interest in compact but expressive systems'
           ]
         },
-        {
-          heading: 'Working style',
-          type: 'paragraph',
-          content:
-            'I tend to look for the smallest set of changes that make a project feel much better. I like focused improvements with a visible effect.'
-        }
-      ],
-      links: []
+        links: []
+      }
     }
-  },
-  {
-    id: 'execution',
-    icon: '◼',
-    label: 'Working Style',
-    title: 'Solo execution',
-    blurb:
-      'I enjoy taking a project from idea to functioning result with a hands-on process.',
-    chips: ['Concept', 'UI', 'Implementation'],
-    detail: {
-      kicker: 'About / Working Style',
-      summary:
-        'I am comfortable handling idea development, structure, UI direction, and implementation together when the project is small enough to stay coherent.',
-      sections: [
-        {
-          heading: 'How I work',
-          type: 'list',
-          content: [
-            'Start with a strong core idea and a usable structure',
-            'Build quickly enough to test how it feels',
-            'Refine what improves clarity, delight, or rhythm'
-          ]
-        },
-        {
-          heading: 'Why this is useful',
-          type: 'paragraph',
-          content:
-            'This approach helps me keep a project aligned from concept to final interaction, especially for prototypes, portfolio work, and personal products.'
-        }
-      ],
-      links: []
-    }
+  ],
+  about: {
+    title: 'About Me',
+    kicker: 'About Me',
+    subtitle: 'A student designer building interactive work through structure, play, and iteration.',
+    intro:
+      'I am interested in projects that feel clear to use and enjoyable to explore. I especially like interactive web experiences, small game systems, and digital ideas that become stronger through good feedback and pacing.',
+    previewCards: [
+      {
+        label: 'Strengths',
+        title: 'How I think',
+        copy: 'I naturally focus on clarity, rhythm, feedback, and the small decisions that make interaction feel better.',
+        points: ['Systems thinking', 'Readable UX', 'Playful interaction']
+      },
+      {
+        label: 'Experience',
+        title: 'How I build',
+        copy: 'I like taking a project from idea to implementation and improving it through repeated testing and revision.',
+        points: ['Solo projects', 'Prototyping', 'Frontend building']
+      },
+      {
+        label: 'Personal',
+        title: 'What interests me',
+        copy: 'I enjoy games, learning-focused products, and small experiments that mix function with delight.',
+        points: ['Game feel', 'Learning tools', 'Creative side projects']
+      }
+    ],
+    sections: [
+      {
+        heading: 'Strengths',
+        type: 'list',
+        content: [
+          'Turning ideas into structured, usable experiences',
+          'Thinking carefully about pacing, feedback, and readability',
+          'Improving a project through focused iteration instead of unnecessary complexity',
+          'Balancing design thinking with hands-on implementation'
+        ]
+      },
+      {
+        heading: 'Personal Experience',
+        type: 'paragraph',
+        content:
+          'Most of my experience comes from building personal projects and learning by making. I enjoy exploring a project from concept to working result, especially when the process includes both design decisions and practical problem-solving.'
+      },
+      {
+        heading: 'Interests and Notes',
+        type: 'paragraph',
+        content:
+          'Beyond portfolio work itself, I am drawn to games, playful interfaces, learning tools, and small ideas that can grow into something memorable. I also like keeping room for personality in a project, so it feels human rather than generic.'
+      }
+    ],
+    sideNotes: [
+      'This page is intentionally easy to expand later with awards, education, tools, or timeline sections.',
+      'You can replace the text here with more personal details whenever you are ready.',
+      'The structure is meant to stay simple while remaining flexible.'
+    ]
   }
-];
+};
 
 const yearEl = document.getElementById('year');
 if (yearEl) {
@@ -250,102 +204,64 @@ if (menuToggle && mainNav) {
   });
 }
 
-function getProjectVisual(visual) {
-  if (visual === 'wow') {
-    return `
-      <div class="project-visual visual-wow">
-        <div class="mock-window">
-          <div class="mock-bar"></div>
-          <div class="mock-content language-ui">
-            <span class="pill">JA</span>
-            <span class="pill">FR</span>
-            <span class="pill active">GAME</span>
-            <div class="quiz-block"></div>
-            <div class="quiz-row"></div>
-            <div class="quiz-row short"></div>
-          </div>
-        </div>
-      </div>
-    `;
-  }
+function renderListItems(items) {
+  return items.map((item) => `<li>${item}</li>`).join('');
+}
 
-  if (visual === 'pong') {
-    return `
-      <div class="project-visual visual-pong">
-        <div class="arena">
-          <div class="paddle left"></div>
-          <div class="paddle right"></div>
-          <div class="ball"></div>
-          <div class="trail"></div>
-          <div class="spark"></div>
-        </div>
-      </div>
-    `;
+function renderLinks(links) {
+  if (!links || !links.length) {
+    return '<p class="note-text">Project links can be added here later.</p>';
   }
 
   return `
-    <div class="project-visual visual-space">
-      <div class="space-panel">
-        <div class="ship ship-a"></div>
-        <div class="ship ship-b"></div>
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="laser"></div>
-      </div>
+    <div class="link-row">
+      ${links.map((link) => `<a href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`).join('')}
     </div>
   `;
 }
 
-function renderProjects() {
+function renderHomeProjects() {
   const grid = document.getElementById('projects-grid');
   if (!grid) return;
 
-  grid.innerHTML = projectItems
+  grid.innerHTML = portfolioData.projects
     .map(
-      (item) => `
-        <article class="project-card ${item.featured ? 'featured' : ''}" tabindex="0" data-detail-type="project" data-detail-id="${item.id}">
-          ${getProjectVisual(item.visual)}
-          <div class="project-body">
-            <span class="project-label">${item.label}</span>
-            <h3>${item.title}</h3>
-            <p class="project-copy">${item.blurb}</p>
-            <div class="project-meta">
-              ${item.meta.map((meta) => `<span>${meta}</span>`).join('')}
-            </div>
-            <ul class="tag-list">
-              ${item.tags.map((tag) => `<li>${tag}</li>`).join('')}
-            </ul>
-            <div class="card-actions">
-              <button class="card-trigger" type="button" data-detail-type="project" data-detail-id="${item.id}">Open Project</button>
-            </div>
-          </div>
-        </article>
-      `
-    )
-    .join('');
-}
-
-function renderAbout() {
-  const grid = document.getElementById('about-grid');
-  if (!grid) return;
-
-  grid.innerHTML = aboutItems
-    .map(
-      (item) => `
-        <article class="about-card" tabindex="0" data-detail-type="about" data-detail-id="${item.id}">
-          <div class="about-card-top">
+      (project) => `
+        <a class="project-card reveal" href="${project.page}">
+          <div class="card-top">
             <div>
-              <span class="about-label">${item.label}</span>
-              <h3>${item.title}</h3>
+              <span class="card-label">${project.label}</span>
+              <h3>${project.title}</h3>
             </div>
-            <div class="about-icon" aria-hidden="true">${item.icon}</div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
           </div>
-          <p class="about-copy">${item.blurb}</p>
-          <div class="about-chip-row">
-            ${item.chips.map((chip) => `<span class="about-chip">${chip}</span>`).join('')}
+          <p class="project-copy">${project.blurb}</p>
+          <p class="project-caption">${project.caption}</p>
+          <div class="project-meta">
+            ${project.meta.map((item) => `<span>${item}</span>`).join('')}
           </div>
-          <div class="card-actions">
-            <button class="card-trigger" type="button" data-detail-type="about" data-detail-id="${item.id}">Open About</button>
+          <div class="project-tags">
+            ${project.tags.map((item) => `<span>${item}</span>`).join('')}
+          </div>
+        </a>
+      `
+    )
+    .join('');
+}
+
+function renderAboutPreview() {
+  const preview = document.getElementById('about-preview');
+  if (!preview) return;
+
+  preview.innerHTML = portfolioData.about.previewCards
+    .map(
+      (item) => `
+        <article class="preview-card reveal">
+          <span class="preview-label">${item.label}</span>
+          <h3>${item.title}</h3>
+          <p class="preview-copy">${item.copy}</p>
+          <div class="preview-points">
+            ${item.points.map((point) => `<span class="section-chip">${point}</span>`).join('')}
           </div>
         </article>
       `
@@ -353,121 +269,205 @@ function renderAbout() {
     .join('');
 }
 
-renderProjects();
-renderAbout();
-
-const revealItems = document.querySelectorAll('.reveal');
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
-
-revealItems.forEach((item) => observer.observe(item));
-
-const detailModal = document.getElementById('detail-modal');
-const detailKicker = document.getElementById('detail-kicker');
-const detailTitle = document.getElementById('detail-title');
-const detailSummary = document.getElementById('detail-summary');
-const detailSections = document.getElementById('detail-sections');
-const detailLinks = document.getElementById('detail-links');
-let lastTrigger = null;
-
-function findDetailItem(type, id) {
-  const collection = type === 'project' ? projectItems : aboutItems;
-  return collection.find((item) => item.id === id) || null;
+function getProjectById(projectId) {
+  return portfolioData.projects.find((project) => project.id === projectId) || null;
 }
 
-function renderDetailSections(sections) {
-  return sections
-    .map((section) => {
-      if (section.type === 'list') {
-        return `
-          <section class="modal-section">
-            <h4>${section.heading}</h4>
-            <ul>
-              ${section.content.map((item) => `<li>${item}</li>`).join('')}
-            </ul>
+function renderProjectDetail() {
+  const root = document.getElementById('project-detail-root');
+  if (!root) return;
+
+  const projectId = document.body.dataset.projectId || root.dataset.projectId || new URLSearchParams(window.location.search).get('project');
+  const project = getProjectById(projectId);
+
+  if (!project) {
+    root.innerHTML = `
+      <section class="empty-state">
+        <a class="back-link" href="index.html#projects">← Back to Projects</a>
+        <h2>Project not found</h2>
+        <p class="note-text">This link does not match any current project page.</p>
+      </section>
+    `;
+    return;
+  }
+
+  document.title = `${project.title} — Jimin`;
+
+  root.innerHTML = `
+    <section class="detail-page">
+      <a class="back-link" href="index.html#projects">← Back to Projects</a>
+
+      <header class="detail-hero">
+        <span class="detail-kicker">${project.detail.kicker}</span>
+        <h1>${project.title}</h1>
+        <p class="detail-subtitle">${project.detail.subtitle}</p>
+        <p class="detail-summary">${project.detail.summary}</p>
+        <div class="detail-tags">
+          ${project.tags.map((tag) => `<span>${tag}</span>`).join('')}
+        </div>
+        <div class="detail-actions">
+          <a class="btn btn-secondary" href="index.html#projects">Back to Home</a>
+          <a class="btn btn-primary" href="about.html">About Me</a>
+        </div>
+      </header>
+
+      <div class="detail-layout">
+        <div class="detail-content">
+          <section class="detail-block">
+            <h2>Overview</h2>
+            ${project.detail.overview.map((paragraph) => `<p>${paragraph}</p>`).join('')}
           </section>
-        `;
-      }
 
-      return `
-        <section class="modal-section">
-          <h4>${section.heading}</h4>
-          <p>${section.content}</p>
-        </section>
-      `;
-    })
-    .join('');
+          ${project.detail.sections
+            .map((section) => {
+              if (section.type === 'list') {
+                return `
+                  <section class="detail-block">
+                    <h3>${section.heading}</h3>
+                    <ul>${renderListItems(section.content)}</ul>
+                  </section>
+                `;
+              }
+
+              return `
+                <section class="detail-block">
+                  <h3>${section.heading}</h3>
+                  <p>${section.content}</p>
+                </section>
+              `;
+            })
+            .join('')}
+        </div>
+
+        <aside class="info-stack">
+          <section class="info-panel">
+            <h3>Role</h3>
+            <p class="note-text">${project.detail.sidebar.role}</p>
+          </section>
+
+          <section class="info-panel">
+            <h3>Tools / Focus</h3>
+            <div class="project-meta">
+              ${project.detail.sidebar.stack.map((item) => `<span>${item}</span>`).join('')}
+            </div>
+          </section>
+
+          <section class="info-panel">
+            <h3>Notes</h3>
+            <ul>${renderListItems(project.detail.sidebar.notes)}</ul>
+          </section>
+
+          <section class="info-panel">
+            <h3>Links</h3>
+            ${renderLinks(project.detail.links)}
+          </section>
+        </aside>
+      </div>
+    </section>
+  `;
 }
 
-function renderDetailLinks(links) {
-  if (!links.length) return '';
+function renderAboutDetail() {
+  const root = document.getElementById('about-detail-root');
+  if (!root) return;
 
-  return links
-    .map(
-      (link) =>
-        `<a class="modal-link" href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
-    )
-    .join('');
+  const about = portfolioData.about;
+  document.title = `${about.title} — Jimin`;
+
+  root.innerHTML = `
+    <section class="detail-page">
+      <a class="back-link" href="index.html#about">← Back to Home</a>
+
+      <header class="detail-hero">
+        <span class="detail-kicker">${about.kicker}</span>
+        <h1>${about.title}</h1>
+        <p class="detail-subtitle">${about.subtitle}</p>
+        <p class="detail-summary">${about.intro}</p>
+        <div class="detail-actions">
+          <a class="btn btn-secondary" href="index.html">Back to Home</a>
+          <a class="btn btn-primary" href="index.html#projects">See Projects</a>
+        </div>
+      </header>
+
+      <div class="detail-layout">
+        <div class="detail-content">
+          ${about.sections
+            .map((section) => {
+              if (section.type === 'list') {
+                return `
+                  <section class="detail-block">
+                    <h2>${section.heading}</h2>
+                    <ul>${renderListItems(section.content)}</ul>
+                  </section>
+                `;
+              }
+
+              return `
+                <section class="detail-block">
+                  <h2>${section.heading}</h2>
+                  <p>${section.content}</p>
+                </section>
+              `;
+            })
+            .join('')}
+        </div>
+
+        <aside class="info-stack">
+          <section class="info-panel">
+            <h3>Quick Keywords</h3>
+            <div class="project-meta">
+              <span>Interactive Design</span>
+              <span>Game Thinking</span>
+              <span>Solo Projects</span>
+              <span>Iteration</span>
+            </div>
+          </section>
+
+          <section class="info-panel">
+            <h3>Notes for Future Editing</h3>
+            <ul>${renderListItems(about.sideNotes)}</ul>
+          </section>
+        </aside>
+      </div>
+    </section>
+  `;
 }
 
-function openDetail(type, id, trigger) {
-  const item = findDetailItem(type, id);
-  if (!item || !detailModal) return;
-
-  lastTrigger = trigger || null;
-  detailKicker.textContent = item.detail.kicker;
-  detailTitle.textContent = item.title;
-  detailSummary.textContent = item.detail.summary;
-  detailSections.innerHTML = renderDetailSections(item.detail.sections);
-  detailLinks.innerHTML = renderDetailLinks(item.detail.links);
-  detailModal.classList.add('is-open');
-  detailModal.setAttribute('aria-hidden', 'false');
-  document.body.classList.add('modal-open');
-}
-
-function closeDetail() {
-  if (!detailModal) return;
-  detailModal.classList.remove('is-open');
-  detailModal.setAttribute('aria-hidden', 'true');
-  document.body.classList.remove('modal-open');
-
-  if (lastTrigger) {
-    lastTrigger.focus();
-  }
-}
-
-document.addEventListener('click', (event) => {
-  const trigger = event.target.closest('[data-detail-type][data-detail-id]');
-  if (trigger) {
-    openDetail(trigger.dataset.detailType, trigger.dataset.detailId, trigger);
+function initReveal() {
+  const revealItems = document.querySelectorAll('.reveal');
+  if (!revealItems.length || typeof IntersectionObserver === 'undefined') {
+    revealItems.forEach((item) => item.classList.add('is-visible'));
     return;
   }
 
-  if (event.target.closest('[data-close-modal]')) {
-    closeDetail();
-  }
-});
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
 
-document.addEventListener('keydown', (event) => {
-  const cardTrigger = event.target.closest('[data-detail-type][data-detail-id]');
+  revealItems.forEach((item) => observer.observe(item));
+}
 
-  if ((event.key === 'Enter' || event.key === ' ') && cardTrigger && !detailModal?.classList.contains('is-open')) {
-    event.preventDefault();
-    openDetail(cardTrigger.dataset.detailType, cardTrigger.dataset.detailId, cardTrigger);
-    return;
-  }
+const pageType = document.body.dataset.page;
 
-  if (event.key === 'Escape' && detailModal?.classList.contains('is-open')) {
-    closeDetail();
-  }
-});
+if (pageType === 'home') {
+  renderHomeProjects();
+  renderAboutPreview();
+}
+
+if (pageType === 'project-detail') {
+  renderProjectDetail();
+}
+
+if (pageType === 'about-detail') {
+  renderAboutDetail();
+}
+
+initReveal();
