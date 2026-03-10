@@ -497,6 +497,42 @@ a {
   color: var(--accent-deep);
 }
 
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.media-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.media-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.media-copy {
+  padding: 16px 18px 18px;
+}
+
+.media-copy h4 {
+  margin: 0;
+  font-size: 1.02rem;
+  letter-spacing: -0.02em;
+}
+
+.media-copy p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -512,7 +548,8 @@ a {
   .section-head,
   .detail-layout,
   .about-preview,
-  .projects-grid {
+  .projects-grid,
+  .media-grid {
     grid-template-columns: 1fr;
   }
 }

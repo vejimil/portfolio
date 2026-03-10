@@ -13,48 +13,131 @@ const portfolioData = {
     {
       id: 'world-of-words',
       page: 'world-of-words.html',
-      label: 'Web Project',
+      label: 'Language Learning Platform',
       title: 'World of Words',
       blurb:
-        'A language-learning site that combines structure, playful interaction, and mini-game thinking.',
+        'A vocabulary-learning platform that turns early language study into structured quizzes and playful mini-games.',
       caption:
-        'Built as a solo project with attention to clarity, flow, and interactive feedback.',
-      meta: ['Interactive Learning', 'Web Design', 'Solo Build'],
-      tags: ['Game-like Learning', 'UX Flow', 'Frontend Implementation'],
+        'Planned, designed, and developed solo—from content logic and interface flow to interaction design and game rules.',
+      meta: ['Quiz System', 'Game UX', 'Solo Build'],
+      tags: ['Language Learning', 'Content Logic', 'Frontend Development'],
       detail: {
-        kicker: 'Project',
-        subtitle: 'A language-learning experience shaped by interaction, structure, and play.',
+        kicker: 'Case Study',
+        subtitle: 'A beginner-friendly vocabulary platform designed to make word study feel less repetitive and more alive.',
         summary:
-          'World of Words is a personal project focused on making vocabulary practice feel more active and engaging. I approached it as both a learning product and an interactive design problem.',
+          'World of Words is a language-learning site for beginners who want vocabulary study to feel more interactive, less mechanical, and easier to return to. It supports early-stage learners with quizzes and mini-games built around vocabulary up to roughly A2 level across Japanese, French, and Spanish.',
         overview: [
-          'I designed the site around the idea that studying becomes stronger when the experience feels clear, responsive, and enjoyable.',
-          'Instead of treating learning content as static information, I organized it so the interface itself supports rhythm, motivation, and experimentation.'
+          'The project began with a frustration I felt while studying languages: many vocabulary tools still feel like digital word lists. They repeat the same fixed questions, rely on flat meaning pairs, and often recreate the experience of staring at a textbook rather than using a real interactive product.',
+          'I approached World of Words as a system design problem. Instead of presenting static content, I built a structure that can generate questions from word sets, choose more natural language pairings, and turn vocabulary review into something clearer, more responsive, and more enjoyable.'
+        ],
+        media: [
+          {
+            src: 'worldofwordsmain.png',
+            alt: 'World of Words quiz setup page with language selection and quiz settings.',
+            title: 'Quiz Setup Flow',
+            caption:
+              'The main screen is kept simple and readable so beginners can start quickly without feeling overwhelmed.'
+          },
+          {
+            src: 'worldofwordsfrench.png',
+            alt: 'French quiz question screen showing multiple-choice answers and immediate feedback.',
+            title: 'Clear Question UI',
+            caption:
+              'Question screens focus on legibility, immediate response, and a steady study rhythm rather than visual clutter.'
+          },
+          {
+            src: 'worldofwordsresult.png',
+            alt: 'Quiz result screen listing the score and incorrectly answered vocabulary.',
+            title: 'Review-Friendly Results',
+            caption:
+              'Results are not just an ending screen—they are part of the learning loop, making weak words easy to revisit.'
+          },
+          {
+            src: 'worldofwordsgamemain.png',
+            alt: 'World of Words game mode main screen with language selection buttons.',
+            title: 'Game Mode Entry',
+            caption:
+              'The game section carries a stronger visual identity while staying connected to the learning purpose of the product.'
+          },
+          {
+            src: 'worldofwordsgamejapanese.png',
+            alt: 'Japanese vocabulary game screen with floating word cards and matching answers.',
+            title: 'Meaning Matching in Motion',
+            caption:
+              'Rather than testing typing speed, the game mode focuses on recognition, attention, and word–meaning connection.'
+          },
+          {
+            src: 'worldofwordsgamespanish.png',
+            alt: 'Spanish vocabulary game screen with floating definition cards and answer choices.',
+            title: 'Playable Study',
+            caption:
+              'The mini-game format adds energy and personality, helping repetition feel more like play than routine drill.'
+          }
         ],
         sections: [
           {
-            heading: 'What I focused on',
+            heading: 'Core goals',
             type: 'list',
             content: [
-              'Information structure for study flow and content browsing',
-              'Interface choices that keep the experience readable and inviting',
-              'Interactive elements that make learning feel more alive',
-              'Expandable mini-game planning for future growth'
+              'Make vocabulary study feel active instead of passive',
+              'Support beginners with a low-friction, readable interface',
+              'Cover useful vocabulary up to roughly A2 level through quizzes and mini-games',
+              'Build a structure that can expand with more words, modes, and progression later'
             ]
+          },
+          {
+            heading: 'Problems I wanted to solve',
+            type: 'paragraph',
+            content:
+              'Traditional word practice often repeats the same quiz order, presents vocabulary as a flat list of meanings, and creates awkward translations when linguistically distant languages are forced into one direct pairing. That makes the experience feel mechanical and, at times, unnatural.'
+          },
+          {
+            heading: 'Design responses',
+            type: 'list',
+            content: [
+              'Questions are generated randomly from vocabulary sets instead of repeating one fixed sheet',
+              'For Japanese, the system can generate items in a JLPT-style format so the experience feels closer to real exam exposure',
+              'Language directions are grouped more naturally: Korean–Japanese, English–French, and English–Spanish',
+              'Immediate feedback, score screens, and error review help learners keep momentum and return to weak words'
+            ]
+          },
+          {
+            heading: 'What makes it fun',
+            type: 'paragraph',
+            content:
+              'I wanted the product to feel useful, but not dry. Small character elements—such as Nihongorae—add warmth and memorability, while the overall interface stays controlled enough to remain a practical study tool rather than becoming a distraction.'
+          },
+          {
+            heading: 'Game design thinking',
+            type: 'list',
+            content: [
+              'Inspired by typing games, but redesigned around meaning recognition rather than keyboard speed',
+              'Explored how word–meaning matching could become a real game interaction instead of a static exercise',
+              'Switched from direct typing to dragging or clicking for smoother play and lower fatigue',
+              'Kept the challenge centered on comprehension, speed of recognition, and attention'
+            ]
+          },
+          {
+            heading: 'Solo development process',
+            type: 'paragraph',
+            content:
+              'I handled planning, design, development, and content structure myself. I also used AI tools during production, but in practice my role was the conductor: defining the system, reviewing output, catching contextual issues AI missed, and solving bugs through my own research in documentation, online resources, and books.'
           },
           {
             heading: 'Why this project matters to me',
             type: 'paragraph',
             content:
-              'This project shows how I like to work: start with a useful idea, strengthen the experience through interaction, and make the final result feel thoughtful rather than overloaded.'
+              'I built this during my mandatory military service in a limited environment and largely on my own. Because of that, the project means more to me than a single website. It became proof that I can create under constraints, teach myself what I do not know yet, and keep pushing until an idea becomes something real.'
           }
         ],
         sidebar: {
-          role: 'Designer / Builder',
-          stack: ['HTML', 'CSS', 'JavaScript'],
+          role: 'Planning, UX/UI Design, Frontend Development, Content System Design',
+          stack: ['HTML', 'CSS', 'JavaScript', 'Quiz Generation', 'Game Interaction', 'Solo Production'],
           notes: [
-            'Solo-built and continuously expandable',
-            'Focused on interaction design and usability',
-            'Good example of my interest in playful digital products'
+            'Designed, written, and iterated entirely as a solo project',
+            'Built for beginner learners studying vocabulary up to roughly A2 level',
+            'Combines quiz flow, randomized content logic, and playful mini-game interaction',
+            'Shows how I work under constraints: structured, persistent, and hands-on'
           ]
         },
         links: [
@@ -220,6 +303,33 @@ function renderLinks(links) {
   `;
 }
 
+function renderProjectMedia(media) {
+  if (!media || !media.length) {
+    return '';
+  }
+
+  return `
+    <section class="detail-block">
+      <h2>Selected Screens</h2>
+      <div class="media-grid">
+        ${media
+          .map(
+            (item) => `
+              <figure class="media-card">
+                <img src="${item.src}" alt="${item.alt}" loading="lazy" />
+                <figcaption class="media-copy">
+                  <h4>${item.title}</h4>
+                  <p>${item.caption}</p>
+                </figcaption>
+              </figure>
+            `
+          )
+          .join('')}
+      </div>
+    </section>
+  `;
+}
+
 function renderHomeProjects() {
   const grid = document.getElementById('projects-grid');
   if (!grid) return;
@@ -306,8 +416,9 @@ function renderProjectDetail() {
           ${project.tags.map((tag) => `<span>${tag}</span>`).join('')}
         </div>
         <div class="detail-actions">
-          <a class="btn btn-secondary" href="index.html#projects">Back to Home</a>
-          <a class="btn btn-primary" href="about.html">About Me</a>
+          <a class="btn btn-secondary" href="index.html#projects">Back to Projects</a>
+          ${project.detail.links?.length ? `<a class="btn btn-primary" href="${project.detail.links[0].href}" target="_blank" rel="noreferrer">${project.detail.links[0].label}</a>` : ''}
+          <a class="btn btn-secondary" href="about.html">About Me</a>
         </div>
       </header>
 
@@ -317,6 +428,8 @@ function renderProjectDetail() {
             <h2>Overview</h2>
             ${project.detail.overview.map((paragraph) => `<p>${paragraph}</p>`).join('')}
           </section>
+
+          ${renderProjectMedia(project.detail.media)}
 
           ${project.detail.sections
             .map((section) => {
