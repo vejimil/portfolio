@@ -53,6 +53,14 @@ const portfolioData = {
               'Results are not just an ending screen—they are part of the learning loop, making weak words easy to revisit.'
           },
           {
+            src: 'worldofwordsmobilequiz.jpg',
+            alt: 'World of Words Japanese vocabulary quiz displayed on a mobile screen in portrait orientation.',
+            title: 'Mobile Quiz Experience',
+            orientation: 'portrait',
+            caption:
+              'Since vocabulary review often happens in short spare moments while moving, the quiz flow was designed to stay readable, tappable, and comfortable on mobile screens as well.'
+          },
+          {
             src: 'worldofwordsgamemain.png',
             alt: 'World of Words game mode main screen with language selection buttons.',
             title: 'Game Mode Entry',
@@ -72,6 +80,14 @@ const portfolioData = {
             title: 'Playable Study',
             caption:
               'The mini-game format adds energy and personality, helping repetition feel more like play than routine drill.'
+          },
+          {
+            src: 'worldofwordsmobilegame.jpg',
+            alt: 'World of Words Acid Rain mini-game displayed on a mobile screen in portrait orientation.',
+            title: 'Mobile-Friendly Game Mode',
+            orientation: 'portrait',
+            caption:
+              'The mini-game layouts were also adjusted for vertical mobile play so users can enjoy a quick session during small gaps in the day without losing clarity or control.'
           }
         ],
         sections: [
@@ -81,6 +97,7 @@ const portfolioData = {
             content: [
               'Make vocabulary study feel active instead of passive',
               'Support beginners with a low-friction, readable interface',
+              'Make both quiz and game flows work comfortably on mobile for short study sessions on the go',
               'Cover useful vocabulary up to roughly A2 level through quizzes and mini-games',
               'Build a structure that can expand with more words, modes, and progression later'
             ]
@@ -100,6 +117,12 @@ const portfolioData = {
               'Language directions are grouped more naturally: Korean–Japanese, English–French, and English–Spanish',
               'Immediate feedback, score screens, and error review help learners keep momentum and return to weak words'
             ]
+          },
+          {
+            heading: 'Designed for quick mobile use',
+            type: 'paragraph',
+            content:
+              'I expected many learners to use this kind of vocabulary quiz in short bursts—while commuting, waiting, or filling a small gap in the day. Because of that, I made sure the experience also works well on mobile. Visual hierarchy, button size, readability, and feedback were all designed so the product still feels clear and comfortable on smaller screens, not just on desktop.'
           },
           {
             heading: 'What makes it fun',
@@ -315,7 +338,7 @@ function renderProjectMedia(media) {
         ${media
           .map(
             (item) => `
-              <figure class="media-card">
+              <figure class="media-card${item.orientation === 'portrait' ? ' is-portrait' : ''}">
                 <img src="${item.src}" alt="${item.alt}" loading="lazy" />
                 <figcaption class="media-copy">
                   <h4>${item.title}</h4>

@@ -517,6 +517,12 @@ a {
   object-fit: cover;
 }
 
+.media-card.is-portrait img {
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  background: var(--panel-soft);
+}
+
 .media-copy {
   padding: 16px 18px 18px;
 }
