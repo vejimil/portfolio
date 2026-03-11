@@ -174,54 +174,67 @@ const portfolioData = {
     {
       id: 'arcade-games',
       page: 'arcade-games.html',
-      label: 'Game Prototype Set',
+      label: 'Arcade Prototype Collection',
       title: 'Arcade Games',
       blurb:
-        'A combined showcase of fast, readable prototypes built around tension, timing, and satisfying feedback.',
+        'A two-player arcade prototype collection built to create quick, satisfying fun in a limited offline environment.',
       caption:
-        'This page brings together Pong Smash and Space Duel under one arcade-focused project group.',
-      meta: ['Gameplay Systems', 'Prototype Design', 'Solo Development'],
-      tags: ['Arcade Feel', 'Pacing', 'Competitive Interaction'],
+        'Made for short local play sessions, then tuned through immediate feedback from the people actually playing them.',
+      meta: ['Local Multiplayer', 'Gameplay Feel', 'Rapid Iteration'],
+      tags: ['Arcade Design', 'Feedback-Driven Tuning', 'Prototype Development'],
       detail: {
-        kicker: 'Project',
-        subtitle: 'Small-scale game prototypes built to explore feel, pacing, and competitive energy.',
+        kicker: 'Project Group',
+        subtitle: 'Two-player arcade prototypes designed to discover how much fun can grow from simple rules and tight iteration.',
         summary:
-          'Arcade Games is a grouped project page for my action-focused prototypes. Each game starts from a simple loop, then pushes that loop through timing, pressure, and stronger player feedback.',
+          'Arcade Games is a grouped project page for prototypes I built around a simple question: how can a small game become genuinely fun in a restricted environment? During leisure time in the military, phone use and network access were limited, so I made lightweight local two-player games that colleagues could enjoy together on a single screen.',
         overview: [
-          'I enjoy building compact systems that still feel expressive. These projects focus less on size and more on how a short interaction can become memorable.',
-          'Both prototypes helped me think more carefully about pace, readability, and how one added mechanic can reshape the whole experience.'
+          'These games were shaped by constraint. They were not built for long online sessions or large-scale content, but for quick moments of play in an offline setting where accessibility, clarity, and instant fun mattered most.',
+          'That limitation became a useful design lens. Starting from classic game structures and very simple forms, I explored what actually creates excitement: pacing, impact, variation, readable rules, and the feeling that every small input matters.'
         ],
         sections: [
+          {
+            heading: 'Core idea',
+            type: 'paragraph',
+            content:
+              'This project began with a practical situation: in a place where both devices and network conditions were limited, I wanted to make games that could still create shared fun. That led me to compact two-player prototypes designed for one screen, quick setup, and immediate understanding. Rather than relying on scale, I focused on creating enjoyment inside a limited space.'
+          },
+          {
+            heading: 'Design focus',
+            type: 'list',
+            content: [
+              'Create quick two-player games that are easy to start and easy to read on a single screen',
+              'Use familiar classic-game foundations, then reshape them through new mechanics and tuning',
+              'Strengthen "game feel" through timing, hit impact, pacing, and satisfying player response',
+              'Iterate fast through direct feedback from real nearby players instead of designing in isolation'
+            ]
+          },
           {
             heading: 'Ping-Pong Smash',
             type: 'paragraph',
             content:
-              'Pong Smash reworks a familiar base game by adding a timing-based smash action. The goal was to turn a simple rally into something with stronger momentum shifts, sharper impact, and more dramatic exchanges.'
+              'Ping-Pong Smash started from Pong, but I felt that plain Pong would not be enough for players used to fast, immediate stimulation. Its rules are timeless, but the base interaction can feel too flat if nothing reshapes the rhythm. To solve that, I added a smash mechanic that gives rallies more speed, tension, and physical satisfaction. The smash created moments of reaction, risk, and momentum change, making the match feel more active instead of merely repetitive. I also kept adjusting details such as smash timing windows and responsiveness through player feedback, treating balance as something discovered through play rather than decided only in theory.'
           },
           {
             heading: 'Space Duel',
             type: 'paragraph',
             content:
-              'Space Duel is a compact two-player action prototype built around pressure, buffs, and quick power swings. I focused on keeping the combat readable while making each round feel active and unstable in a good way.'
+              'Space Duel began with an even more basic question: how can a game emerge from simple geometric shapes? I started by drawing circles without a fixed plan, then explored what rules, systems, and goals could turn them into an actual game. From there, I gradually added core elements such as shooting, health, and combat structure, then layered in bombs, items, and other details to enrich the basic loop. When players felt the attacks were becoming too one-note, I added a level-up bullet transformation system so matches could change character over time. That process became a valuable study in how a game is assembled and where fun actually appears inside a system.'
           },
           {
-            heading: 'Shared design themes',
-            type: 'list',
-            content: [
-              'Readable systems with a stronger sense of impact',
-              'Short play loops that still create tension and variation',
-              'Careful attention to rhythm, feedback, and player response',
-              'Solo prototyping from concept to implementation'
-            ]
+            heading: 'What I learned',
+            type: 'paragraph',
+            content:
+              'More than anything, this project became a fundamental exploration of what a game is. Because I was in a setting where I could receive player reactions immediately, I was able to patch and retune the games in real time, watching what people enjoyed, where they lost interest, and which changes made the experience more alive. That taught me that fun is rarely the result of one clever idea alone. It emerges through repeated testing, close observation, and the willingness to refine a system until players genuinely want one more round.'
           }
         ],
         sidebar: {
-          role: 'Game Designer / Prototype Builder',
-          stack: ['Python', 'Gameplay Logic', 'Balancing'],
+          role: 'Game Designer, Gameplay Programmer, Balance Tuner',
+          stack: ['Python', 'Local Multiplayer Design', 'Gameplay Logic', 'Balancing', 'Feedback Iteration'],
           notes: [
-            'Includes Pong Smash and Space Duel',
-            'Focused on gameplay feel and interaction tuning',
-            'Represents my interest in compact but expressive systems'
+            'Built for short local sessions in a restricted offline environment',
+            'Includes Pong Smash and Space Duel as two complementary experiments',
+            'Focused on how fun can emerge from simple rules, fast tuning, and direct player response',
+            'Helped me explore the fundamentals of pacing, impact, variation, and game feel'
           ]
         },
         links: []
