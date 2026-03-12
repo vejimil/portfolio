@@ -211,12 +211,20 @@ const portfolioData = {
           {
             heading: 'Ping-Pong Smash',
             type: 'paragraph',
+            media: {
+              type: 'video',
+              src: 'pingpongsmash.mp4'
+            },
             content:
               'Ping-Pong Smash started from Pong, but I felt that plain Pong would not be enough for players used to fast, immediate stimulation. Its rules are timeless, but the base interaction can feel too flat if nothing reshapes the rhythm. To solve that, I added a smash mechanic that gives rallies more speed, tension, and physical satisfaction. The smash created moments of reaction, risk, and momentum change, making the match feel more active instead of merely repetitive. I also kept adjusting details such as smash timing windows and responsiveness through player feedback, treating balance as something discovered through play rather than decided only in theory.'
           },
           {
             heading: 'Space Duel',
             type: 'paragraph',
+            media: {
+              type: 'video',
+              src: 'spaceduel.mp4'
+            },
             content:
               'Space Duel began with an even more basic question: how can a game emerge from simple geometric shapes? I started by drawing circles without a fixed plan, then explored what rules, systems, and goals could turn them into an actual game. From there, I gradually added core elements such as shooting, health, and combat structure, then layered in bombs, items, and other details to enrich the basic loop. When players felt the attacks were becoming too one-note, I added a level-up bullet transformation system so matches could change character over time. That process became a valuable study in how a game is assembled and where fun actually appears inside a system.'
           },
@@ -469,10 +477,33 @@ function renderProjectDetail() {
 
           ${project.detail.sections
             .map((section) => {
+              const mediaMarkup = section.media
+                ? `
+                  <div class="section-media">
+                    <video
+                      class="section-video"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                      controls
+                      preload="metadata"
+                    >
+                      <source
+                        src="${section.media.src}"
+                        type="${section.media.src.endsWith('.mov') ? 'video/quicktime' : 'video/mp4'}"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                `
+                : '';
+
               if (section.type === 'list') {
                 return `
                   <section class="detail-block">
                     <h3>${section.heading}</h3>
+                    ${mediaMarkup}
                     <ul>${renderListItems(section.content)}</ul>
                   </section>
                 `;
@@ -481,6 +512,7 @@ function renderProjectDetail() {
               return `
                 <section class="detail-block">
                   <h3>${section.heading}</h3>
+                  ${mediaMarkup}
                   <p>${section.content}</p>
                 </section>
               `;

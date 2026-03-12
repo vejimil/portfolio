@@ -539,6 +539,21 @@ a {
   line-height: 1.7;
 }
 
+.section-media {
+  margin: 18px 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #0f0f0f;
+}
+
+.section-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);
