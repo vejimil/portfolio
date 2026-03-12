@@ -512,15 +512,17 @@ a {
 }
 
 .media-card img {
+  display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
 .media-card.is-portrait img {
-  aspect-ratio: 9 / 16;
-  object-fit: contain;
-  background: var(--panel-soft);
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: cover;
+  background: transparent;
 }
 
 .media-copy {
