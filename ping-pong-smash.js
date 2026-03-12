@@ -32,7 +32,7 @@
   const SMASH_SPEED = 1500;
   const SMASH_SPEED_MAX = 1680;
   const SMASH_Y_GAIN = 1.15;
-  const SMASH_FLASH_MS = 180;
+  const SMASH_FLASH_MS = 220;
 
   const keys = new Set();
   const blockCodes = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'KeyW', 'KeyS', 'KeyD', 'KeyP', 'KeyR', 'Space']);
