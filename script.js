@@ -189,6 +189,7 @@ const portfolioData = {
           'Arcade Games is a grouped project page for prototypes I built around a simple question: how can a small game become genuinely fun in a restricted environment? During leisure time in the military, phone use and network access were limited, so I made lightweight local two-player games that colleagues could enjoy together on a single screen.',
         overview: [
           'These games were shaped by constraint. They were not built for long online sessions or large-scale content, but for quick moments of play in an offline setting where accessibility, clarity, and instant fun mattered most.',
+          'For this portfolio version, I also ported the prototypes into browser-playable JavaScript versions so visitors can move beyond watching a video preview and immediately try the games themselves with a single click.',
           'That limitation became a useful design lens. Starting from classic game structures and very simple forms, I explored what actually creates excitement: pacing, impact, variation, readable rules, and the feeling that every small input matters.'
         ],
         sections: [
@@ -528,7 +529,7 @@ function renderProjectDetail() {
         </div>
         <div class="detail-actions">
           <a class="btn btn-secondary" href="index.html#projects">Back to Projects</a>
-          ${project.detail.links?.length ? `<a class="btn btn-primary" href="${project.detail.links[0].href}" target="_blank" rel="noreferrer">${project.detail.links[0].label}</a>` : ''}
+          ${project.detail.links?.length === 1 ? `<a class="btn btn-primary" href="${project.detail.links[0].href}" target="_blank" rel="noreferrer">${project.detail.links[0].label}</a>` : ''}
           <a class="btn btn-secondary" href="about.html">About Me</a>
         </div>
       </header>
