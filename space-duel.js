@@ -19,8 +19,8 @@
   const W = 1200;
   const H = 780;
   const R = 16;
-  const VR = 300;
-  const BV = 780;
+  const VR = 400;
+  const BV = 980;
   const DMG = 10;
   const COOLDOWN = 0.2;
   const BR = 6;
