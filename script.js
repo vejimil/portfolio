@@ -276,57 +276,97 @@ const portfolioData = {
   about: {
     title: 'About Me',
     kicker: 'About Me',
-    subtitle: 'A student designer building interactive work through structure, play, and iteration.',
+    subtitle: 'A student designer shaped by games, curiosity across disciplines, and a belief that thoughtful work should feel human.',
     intro:
-      'I am interested in projects that feel clear to use and enjoyable to explore. I especially like interactive web experiences, small game systems, and digital ideas that become stronger through good feedback and pacing.',
+      'I study aesthetics, clothing and textiles, and industrial design at Seoul National University. Since childhood, games have been a constant companion—starting with Nintendo and extending to PlayStation and PC games—and they still shape the way I think about fun, emotion, structure, and interaction. I am drawn to work that feels both well built and genuinely alive to the people using it.',
     previewCards: [
       {
-        label: 'Strengths',
-        title: 'How I think',
-        copy: 'I naturally focus on clarity, rhythm, feedback, and the small decisions that make interaction feel better.',
-        points: ['Systems thinking', 'Readable UX', 'Playful interaction']
+        label: 'Introduction',
+        title: 'Who I am',
+        copy: 'A student at Seoul National University studying aesthetics, clothing and textiles, and industrial design, with a long-standing love for games and interactive experiences.',
+        points: ['Aesthetics', 'Clothing & Textiles', 'Industrial Design']
       },
       {
         label: 'Experience',
-        title: 'How I build',
-        copy: 'I like taking a project from idea to implementation and improving it through repeated testing and revision.',
-        points: ['Solo projects', 'Prototyping', 'Frontend building']
+        title: 'What has shaped me',
+        copy: 'I learn best by stepping into unfamiliar situations, working seriously, and turning uncertainty into something real.',
+        points: ['Fashion show', 'Festival planning', 'Volunteering']
       },
       {
-        label: 'Personal',
-        title: 'What interests me',
-        copy: 'I enjoy games, learning-focused products, and small experiments that mix function with delight.',
-        points: ['Game feel', 'Learning tools', 'Creative side projects']
+        label: 'Approach',
+        title: 'How I work',
+        copy: "I care about responsibility, deep learning, and respectful communication. I try to listen well, understand other people's fields, and build work that earns trust.",
+        points: ['Responsibility', 'Curiosity', 'Listening']
       }
     ],
     sections: [
       {
-        heading: 'Strengths',
-        type: 'list',
-        content: [
-          'Turning ideas into structured, usable experiences',
-          'Thinking carefully about pacing, feedback, and readability',
-          'Improving a project through focused iteration instead of unnecessary complexity',
-          'Balancing design thinking with hands-on implementation'
-        ]
-      },
-      {
-        heading: 'Personal Experience',
+        heading: 'Who I Am',
         type: 'paragraph',
         content:
-          'Most of my experience comes from building personal projects and learning by making. I enjoy exploring a project from concept to working result, especially when the process includes both design decisions and practical problem-solving.'
+          'I am currently studying aesthetics, clothing and textiles, and industrial design at Seoul National University. I have loved games since I was very young, from Nintendo to PlayStation to PC games, and they have stayed close to me ever since. That long relationship with games naturally led me toward interactive design, but I am equally energized by other fields such as fashion, foreign languages, and music. I like moving between different kinds of interests because each one changes the way I see beauty, people, and experience.'
       },
       {
-        heading: 'Interests and Notes',
+        heading: 'Experiences That Shaped Me',
         type: 'paragraph',
         content:
-          'Beyond portfolio work itself, I am drawn to games, playful interfaces, learning tools, and small ideas that can grow into something memorable. I also like keeping room for personality in a project, so it feels human rather than generic.'
+          'A lot of my growth has come from entering spaces where I was not fully ready and deciding to learn through action. I am drawn to situations that ask for initiative, persistence, and the willingness to keep going even when the path is unfamiliar. That attitude has shaped the way I study, collaborate, and build projects.'
+      },
+      {
+        heading: 'Stepping Into Fashion',
+        type: 'paragraph',
+        content:
+          "One experience that shaped me deeply was participating in my school's graduation fashion show before I knew how to make clothes. I loved fashion, but I had never learned garment construction. Instead of waiting until I felt qualified, I emailed the professor directly and asked for a chance. I did not want to fall behind. Through steady effort, I completed three looks and later took on the role of planning team leader. That experience taught me that passion only becomes meaningful when it is matched by action, discipline, and responsibility."
+      },
+      {
+        heading: 'Designing Fun Under Constraints',
+        type: 'paragraph',
+        content:
+          'I also helped plan a university festival, where I worked on games and events. In a situation with a limited budget, I became interested in how to create raw, immediate fun using simple ideas. One example was a human curling event built with wheeled tubs and carefully prepared safety measures. It reminded me that memorable experiences do not always come from scale or expensive technology. They often come from understanding people, energy, rules, and surprise.'
+      },
+      {
+        heading: 'Small Acts That Matter',
+        type: 'paragraph',
+        content:
+          'Alongside project work, I have also done meal-service volunteering and donated meal tickets during small gaps in my school day. It became a quiet but meaningful part of my routine. Experiences like this remind me that kindness is not separate from creative work. The way we speak, listen, and treat other people shapes collaboration just as much as any technical skill.'
+      },
+      {
+        heading: 'How I Work',
+        type: 'paragraph',
+        content:
+          'When I take responsibility for something, I want to understand it properly and carry it through to a result I can be proud of. I try to study deeply, not just enough to finish the task, but enough to do it well. I also care a lot about communication. To work well with others, I try to learn their field, listen carefully, and approach collaboration with respect. I believe good teamwork begins not from speaking first, but from listening well.'
+      },
+      {
+        heading: 'What Keeps Me Curious',
+        type: 'paragraph',
+        content:
+          'Fashion, languages, music, and games are not separate interests to me. Together, they are part of the energy that keeps me moving. I care a lot about happiness in everyday life and try to be kind to the people around me. If one thoughtful word can make someone feel lighter, I think that matters. I want both the things I create and the way I work with others to carry that kind of warmth.'
       }
     ],
-    sideNotes: [
-      'This page is intentionally easy to expand later with awards, education, tools, or timeline sections.',
-      'You can replace the text here with more personal details whenever you are ready.',
-      'The structure is meant to stay simple while remaining flexible.'
+    quickKeywords: [
+      'Interactive Design',
+      'Game Thinking',
+      'Experience Design',
+      'Cross-Disciplinary Curiosity',
+      'Responsibility',
+      'Warm Collaboration'
+    ],
+    sidebarPanels: [
+      {
+        heading: 'Currently Studying',
+        type: 'list',
+        content: ['Aesthetics', 'Clothing and Textiles', 'Industrial Design']
+      },
+      {
+        heading: 'Outside Work',
+        type: 'list',
+        content: ['Games', 'Fashion', 'Foreign Languages', 'Music', 'Community-minded work']
+      },
+      {
+        heading: 'What People Would Feel',
+        type: 'paragraph',
+        content: "I hope my work feels thoughtful, alive, and generous—clear enough to use with ease, but warm enough to stay in people's memory."
+      }
     ]
   }
 };
@@ -648,17 +688,29 @@ function renderAboutDetail() {
           <section class="info-panel">
             <h3>Quick Keywords</h3>
             <div class="project-meta">
-              <span>Interactive Design</span>
-              <span>Game Thinking</span>
-              <span>Solo Projects</span>
-              <span>Iteration</span>
+              ${about.quickKeywords.map((keyword) => `<span>${keyword}</span>`).join('')}
             </div>
           </section>
 
-          <section class="info-panel">
-            <h3>Notes for Future Editing</h3>
-            <ul>${renderListItems(about.sideNotes)}</ul>
-          </section>
+          ${about.sidebarPanels
+            .map((panel) => {
+              if (panel.type === 'list') {
+                return `
+                  <section class="info-panel">
+                    <h3>${panel.heading}</h3>
+                    <ul>${renderListItems(panel.content)}</ul>
+                  </section>
+                `;
+              }
+
+              return `
+                <section class="info-panel">
+                  <h3>${panel.heading}</h3>
+                  <p class="note-text">${panel.content}</p>
+                </section>
+              `;
+            })
+            .join('')}
         </aside>
       </div>
     </section>
