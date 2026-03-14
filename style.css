@@ -260,7 +260,6 @@ a {
 }
 
 .section-summary,
-.contact-section p,
 .project-copy,
 .project-caption,
 .preview-copy,
@@ -422,17 +421,26 @@ a {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 22px;
 }
 
 .contact-panel {
   min-height: 100%;
-  padding: 28px;
+  padding: 30px;
 }
 
 .contact-panel h3 {
-  color: var(--accent);
+  color: var(--text);
+}
+
+.contact-single-card .project-copy,
+.contact-single-card .project-caption {
+  max-width: 760px;
+}
+
+.contact-section .section-label {
+  color: var(--accent-deep);
 }
 
 .contact-meta-row {
