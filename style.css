@@ -306,24 +306,11 @@ a {
   min-height: 100%;
 }
 
-.about-card .card-top {
-  position: relative;
-  padding-right: 30px;
-}
-
-.about-card .card-arrow {
-  position: absolute;
-  top: 2px;
-  right: 0;
-  line-height: 1;
-}
-
 .card-top,
 .preview-card-top {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: flex-start;
-  gap: 16px;
+  position: relative;
+  display: block;
+  padding-right: 34px;
 }
 
 .card-heading {
@@ -348,8 +335,10 @@ a {
 }
 
 .card-arrow {
+  position: absolute;
+  top: 2px;
+  right: 0;
   flex-shrink: 0;
-  align-self: start;
   color: var(--accent);
   font-size: 1.4rem;
   font-weight: 800;
@@ -378,8 +367,20 @@ a {
 .project-card:not(.about-card) .project-meta-inline span {
   max-width: 100%;
   white-space: nowrap;
-  padding-inline: 12px;
-  font-size: 0.86rem;
+  padding-inline: 11px;
+  font-size: 0.82rem;
+}
+
+.about-card .project-meta-inline {
+  margin-top: 2px;
+  gap: 8px;
+}
+
+.about-card .project-meta-inline span {
+  max-width: 100%;
+  white-space: nowrap;
+  padding-inline: 11px;
+  font-size: 0.82rem;
 }
 
 .project-meta span,
@@ -674,9 +675,10 @@ a {
     gap: 8px;
   }
 
-  .project-card:not(.about-card) .project-meta-inline span {
-    padding-inline: 11px;
-    font-size: 0.82rem;
+  .project-card:not(.about-card) .project-meta-inline span,
+  .about-card .project-meta-inline span {
+    padding-inline: 10px;
+    font-size: 0.78rem;
   }
 }
 
