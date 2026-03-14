@@ -520,13 +520,13 @@ function renderAboutPreview() {
             <div class="card-heading">
               <span class="card-label">${item.label}</span>
               <h3>${item.title}</h3>
+                <div class="project-meta project-meta-inline">
+                  ${item.points.slice(0, 2).map((point) => `<span>${point}</span>`).join('')}
+                </div>
             </div>
             <span class="card-arrow" aria-hidden="true">↗</span>
           </div>
           <p class="project-copy">${item.copy}</p>
-          <div class="project-meta project-meta-inline">
-            ${item.points.slice(0, 2).map((point) => `<span>${point}</span>`).join('')}
-          </div>
         </a>
       `
     )
