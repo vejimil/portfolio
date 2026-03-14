@@ -350,6 +350,14 @@ a {
   margin-top: 2px;
 }
 
+.about-card .project-meta-inline {
+  flex-wrap: nowrap;
+}
+
+.about-card .project-meta-inline span {
+  white-space: nowrap;
+}
+
 .project-meta span,
 .project-tags span,
 .detail-tags span,
@@ -645,6 +653,10 @@ a {
 
   .brand-word {
     letter-spacing: 0.16em;
+  }
+
+  .about-card .project-meta-inline {
+    flex-wrap: wrap;
   }
 }
 

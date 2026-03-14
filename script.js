@@ -19,7 +19,7 @@ const portfolioData = {
         'A vocabulary-learning platform that turns early language study into structured quizzes and playful mini-games.',
       caption:
         'Planned, designed, and developed solo—from content logic and interface flow to interaction design and game rules.',
-      meta: ['Quiz System', 'Game UX', 'Solo Build'],
+      meta: ['Language Learning', 'Content Logic', 'Frontend Development'],
       tags: ['Language Learning', 'Content Logic', 'Frontend Development'],
       detail: {
         kicker: 'Case Study',
@@ -180,7 +180,7 @@ const portfolioData = {
         'A two-player arcade game collection built to create quick, satisfying fun in a limited offline environment.',
       caption:
         'Made for short local play sessions, then tuned through immediate feedback from the people actually playing them.',
-      meta: ['Local Multiplayer', 'Gameplay Feel', 'Rapid Iteration'],
+      meta: ['Arcade Design', 'Feedback-Driven Tuning', 'Game Development'],
       tags: ['Arcade Design', 'Feedback-Driven Tuning', 'Game Development'],
       detail: {
         kicker: 'Project Group',
@@ -284,19 +284,19 @@ const portfolioData = {
         label: 'Introduction',
         title: 'Who I am',
         copy: 'A student at Seoul National University studying aesthetics, clothing and textiles, and industrial design, with a long-standing love for games and interactive experiences.',
-        points: ['Aesthetics', 'Clothing & Textiles', 'Industrial Design']
+        points: ['Aesthetics', 'Industrial Design']
       },
       {
         label: 'Experience',
         title: 'What has shaped me',
         copy: 'I learn best by stepping into unfamiliar situations, working seriously, and turning uncertainty into something real.',
-        points: ['Fashion show', 'Festival planning', 'Volunteering']
+        points: ['Fashion Show', 'Festival Planning']
       },
       {
         label: 'Approach',
         title: 'How I work',
         copy: "I care about responsibility, deep learning, and respectful communication. I try to listen well, understand other people's fields, and build work that earns trust.",
-        points: ['Responsibility', 'Curiosity', 'Listening']
+        points: ['Responsibility', 'Listening']
       }
     ],
     sections: [
@@ -495,7 +495,7 @@ function renderHomeProjects() {
               <span class="card-label">${project.label}</span>
               <h3>${project.title}</h3>
               <div class="project-meta project-meta-inline">
-                ${project.meta.slice(0, 3).map((item) => `<span>${item}</span>`).join('')}
+                ${project.tags.slice(0, 3).map((item) => `<span>${item}</span>`).join('')}
               </div>
             </div>
             <span class="card-arrow" aria-hidden="true">↗</span>
@@ -521,7 +521,7 @@ function renderAboutPreview() {
               <span class="card-label">${item.label}</span>
               <h3>${item.title}</h3>
               <div class="project-meta project-meta-inline">
-                ${item.points.slice(0, 3).map((point) => `<span>${point}</span>`).join('')}
+                ${item.points.slice(0, 2).map((point) => `<span>${point}</span>`).join('')}
               </div>
             </div>
             <span class="card-arrow" aria-hidden="true">↗</span>
@@ -687,13 +687,6 @@ function renderAboutDetail() {
         </div>
 
         <aside class="info-stack">
-          <section class="info-panel">
-            <h3>Quick Keywords</h3>
-            <div class="project-meta">
-              ${about.quickKeywords.map((keyword) => `<span>${keyword}</span>`).join('')}
-            </div>
-          </section>
-
           ${about.sidebarPanels
             .map((panel) => {
               if (panel.type === 'list') {
