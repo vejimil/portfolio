@@ -482,6 +482,28 @@ function renderSectionActions(actions) {
   `;
 }
 
+function renderAboutCardsMarkup(cards) {
+  return cards
+    .map(
+      (item) => `
+        <a class="project-card about-card reveal" href="about.html">
+          <div class="card-top">
+            <div class="card-heading">
+              <span class="card-label">${item.label}</span>
+              <h3>${item.title}</h3>
+              <div class="project-meta project-meta-inline">
+                ${item.points.slice(0, 2).map((point) => `<span>${point}</span>`).join('')}
+              </div>
+            </div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </div>
+          <p class="project-copy">${item.copy}</p>
+        </a>
+      `
+    )
+    .join('');
+}
+
 function renderHomeProjects() {
   const grid = document.getElementById('projects-grid');
   if (!grid) return;
@@ -512,25 +534,7 @@ function renderAboutPreview() {
   const preview = document.getElementById('about-preview');
   if (!preview) return;
 
-  preview.innerHTML = portfolioData.about.previewCards
-    .map(
-      (item) => `
-        <a class="project-card about-card reveal" href="about.html">
-          <div class="card-top">
-            <div class="card-heading">
-              <span class="card-label">${item.label}</span>
-              <h3>${item.title}</h3>
-              <div class="project-meta project-meta-inline">
-                ${item.points.slice(0, 2).map((point) => `<span>${point}</span>`).join('')}
-              </div>
-            </div>
-            <span class="card-arrow" aria-hidden="true">↗</span>
-          </div>
-          <p class="project-copy">${item.copy}</p>
-        </a>
-      `
-    )
-    .join('');
+  preview.innerHTML = renderAboutCardsMarkup(portfolioData.about.previewCards);
 }
 
 function getProjectById(projectId) {
@@ -665,6 +669,13 @@ function renderAboutDetail() {
 
       <div class="detail-layout">
         <div class="detail-content">
+          <section class="detail-block detail-preview-block">
+            <h2>Quick Snapshot</h2>
+            <div class="about-preview about-preview-detail">
+              ${renderAboutCardsMarkup(about.previewCards)}
+            </div>
+          </section>
+
           ${about.sections
             .map((section) => {
               if (section.type === 'list') {
