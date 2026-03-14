@@ -16,19 +16,19 @@ const portfolioData = {
       label: 'Language Learning Platform',
       title: 'World of Words',
       blurb:
-        'A vocabulary-learning platform that turns early language study into structured quizzes and playful mini-games.',
+        'A language-learning platform that turns vocabulary study into structured quizzes and replayable mini-games.',
       caption:
-        'Planned, designed, and developed solo—from content logic and interface flow to interaction design and game rules.',
+        'Planned, designed, and built solo, from content logic and interface flow to interaction design and game systems.',
       meta: ['Language Learning', 'Content Logic', 'Frontend Development'],
       tags: ['Language Learning', 'Content Logic', 'Frontend Development'],
       detail: {
         kicker: 'Case Study',
-        subtitle: 'A beginner-friendly vocabulary platform designed to make word study feel less repetitive and more alive.',
+        subtitle: 'A beginner-friendly vocabulary platform designed to make word study feel clearer, more active, and easier to return to.',
         summary:
-          'World of Words is a language-learning site for beginners who want vocabulary study to feel more interactive, less mechanical, and easier to return to. It supports early-stage learners with quizzes and mini-games built around vocabulary up to roughly A2 level across Japanese, French, and Spanish.',
+          'World of Words is a language-learning platform for beginners who want vocabulary study to feel more engaging and less repetitive. It supports early-stage learners across Japanese, French, and Spanish through structured quizzes, review flows, and lightweight game modes built around vocabulary up to roughly A2 level.',
         overview: [
-          'The project began with a frustration I felt while studying languages: many vocabulary tools still feel like digital word lists. They repeat the same fixed questions, rely on flat meaning pairs, and often recreate the experience of staring at a textbook rather than using a real interactive product.',
-          'I approached World of Words as a system design problem. Instead of presenting static content, I built a structure that can generate questions from word sets, choose more natural language pairings, and turn vocabulary review into something clearer, more responsive, and more enjoyable.'
+          'This project began with a frustration I often felt while studying languages. Many vocabulary tools are useful, but they still feel close to digital word lists: the same fixed question types, flat word–meaning pairs, and not much sense of interaction or momentum.',
+          'I approached World of Words as a system design problem. Instead of presenting static content, I built a structure that can generate questions from word sets, choose more natural language pairings, and turn vocabulary review into something clearer, more replayable, and more alive.'
         ],
         media: [
           {
@@ -144,13 +144,13 @@ const portfolioData = {
             heading: 'Solo development process',
             type: 'paragraph',
             content:
-              'I handled planning, design, development, and content structure myself. I also used AI tools during production, but in practice my role was the conductor: defining the system, reviewing output, catching contextual issues AI missed, and solving bugs through my own research in documentation, online resources, and books.'
+              'I handled the planning, design, development, and content structure myself. I also used AI tools as part of the workflow, mainly to speed up exploration and support implementation. But the project direction, system design, content judgment, debugging, and final decisions were all mine. The important part was not just generating output, but deciding what fit the product and fixing what did not.'
           },
           {
             heading: 'Why this project matters to me',
             type: 'paragraph',
             content:
-              'I built this during my mandatory military service in a limited environment and largely on my own. Because of that, the project means more to me than a single website. It became proof that I can create under constraints, teach myself what I do not know yet, and keep pushing until an idea becomes something real.'
+              'I built this during my mandatory military service, in a limited environment and largely on my own. Because of that, the project means more to me than a single website. It became proof that I can keep learning under constraints and carry an idea far enough to make it real.'
           }
         ],
         sidebar: {
@@ -177,20 +177,20 @@ const portfolioData = {
       label: 'Arcade Game Collection',
       title: 'Arcade Games',
       blurb:
-        'A two-player arcade game collection built to create quick, satisfying fun in a limited offline environment.',
+        'A two-player arcade game collection built for quick, satisfying play in a limited offline environment.',
       caption:
-        'Made for short local play sessions, then tuned through immediate feedback from the people actually playing them.',
+        'Made for short local sessions, then tuned through direct feedback from the people actually playing them.',
       meta: ['Arcade Design', 'Feedback-Driven Tuning', 'Game Development'],
       tags: ['Arcade Design', 'Feedback-Driven Tuning', 'Game Development'],
       detail: {
         kicker: 'Project Group',
-        subtitle: 'Two-player arcade games designed to show how much fun can grow from simple rules and tight iteration.',
+        subtitle: 'Two-player arcade games shaped by simple rules, fast iteration, and real player feedback.',
         summary:
-          'Arcade Games is a grouped project page for games I built around a simple question: how can a small game become genuinely fun in a restricted environment? During leisure time in the military, phone use and network access were limited, so I made lightweight local two-player games that colleagues could enjoy together on a single screen.',
+          'Arcade Games is a grouped project page for small two-player games I built in a restricted offline environment during military service. With limited phone use and network access, I focused on lightweight local games that colleagues could understand quickly and enjoy together on a single screen.',
         overview: [
-          'These games were shaped by constraint. They were not built for long online sessions or large-scale content, but for quick moments of play in an offline setting where accessibility, clarity, and instant fun mattered most.',
-          'For this portfolio version, I also ported the games into browser-playable JavaScript versions so visitors can move beyond watching a video preview and immediately try them with a single click.',
-          'That limitation became a useful design lens. Starting from classic game structures and very simple forms, I explored what actually creates excitement: pacing, impact, variation, readable rules, and the feeling that every small input matters.'
+          'These games were shaped by constraint. They were designed for short offline sessions where clarity, accessibility, and immediate fun mattered more than scale.',
+          'For this portfolio, I later ported them into browser-playable JavaScript versions so visitors can move from watching to playing.',
+          'The limitation itself became a design lens. Starting from classic game structures and simple forms, I explored what makes a small game feel exciting: pace, impact, variation, readability, and the sense that each input matters.'
         ],
         sections: [
           {
@@ -205,8 +205,8 @@ const portfolioData = {
             content: [
               'Create quick two-player games that are easy to start and easy to read on a single screen',
               'Use familiar classic-game foundations, then reshape them through new mechanics and tuning',
-              'Strengthen "game feel" through timing, hit impact, pacing, and satisfying player response',
-              'Iterate fast through direct feedback from real nearby players instead of designing in isolation'
+              'Use timing, feedback, and pacing to create stronger game feel',
+              'Iterate through direct player reactions rather than relying only on theory'
             ]
           },
           {
@@ -224,7 +224,7 @@ const portfolioData = {
               }
             ],
             content:
-              'Ping-Pong Smash started from Pong, but I felt that plain Pong would not be enough for players used to fast, immediate stimulation. Its rules are timeless, but the base interaction can feel too flat if nothing reshapes the rhythm. To solve that, I added a smash mechanic that gives rallies more speed, tension, and physical satisfaction. The smash created moments of reaction, risk, and momentum change, making the match feel more active instead of merely repetitive. I also kept adjusting details such as smash timing windows and responsiveness through player feedback, treating balance as something discovered through play rather than decided only in theory.'
+              'Ping-Pong Smash started from Pong, but I wanted to reinterpret it with a faster rhythm. Based on the way many people now consume short-form, fast-paced media, I felt a more immediate tempo would make the game more engaging in short local sessions. To do that, I added a smash mechanic that gives rallies more speed, tension, and physical satisfaction. It created moments of reaction, risk, and momentum shift, and I kept tuning the timing window and responsiveness through real player feedback.'
           },
           {
             heading: 'Space Duel',
@@ -241,13 +241,13 @@ const portfolioData = {
               }
             ],
             content:
-              'Space Duel began with an even more basic question: how can a game emerge from simple geometric shapes? I started by drawing circles without a fixed plan, then explored what rules, systems, and goals could turn them into an actual game. From there, I gradually added core elements such as shooting, health, and combat structure, then layered in bombs, items, and other details to enrich the basic loop. When players felt the attacks were becoming too one-note, I added a level-up bullet transformation system so matches could change character over time. That process became a valuable study in how a game is assembled and where fun actually appears inside a system.'
+              'Space Duel began with a simpler question: how much game can grow from basic geometric shapes? I started with minimal forms and gradually built a combat loop around movement, shooting, health, items, and match variation. As players reacted to the game, I kept expanding the system, including a level-based bullet transformation mechanic so rounds would evolve over time rather than stay flat.'
           },
           {
             heading: 'What I learned',
             type: 'paragraph',
             content:
-              'More than anything, this project became a fundamental exploration of what a game is. Because I was in a setting where I could receive player reactions immediately, I was able to patch and retune the games in real time, watching what people enjoyed, where they lost interest, and which changes made the experience more alive. That taught me that fun is rarely the result of one clever idea alone. It emerges through repeated testing, close observation, and the willingness to refine a system until players genuinely want one more round.'
+              'This project taught me that fun rarely comes from one idea alone. It emerges through rhythm, readability, feedback, variation, and repeated tuning based on how people actually play.'
           }
         ],
         sidebar: {
@@ -276,26 +276,26 @@ const portfolioData = {
   about: {
     title: 'About Me',
     kicker: 'About Me',
-    subtitle: 'A student designer shaped by games, curiosity across disciplines, and a belief that thoughtful work should feel human.',
+    subtitle: 'A cross-disciplinary designer shaped by games, fashion, curiosity, and hands-on making.',
     intro:
-      'I study aesthetics, clothing and textiles, and industrial design at Seoul National University. Since childhood, games have been a constant companion—starting with Nintendo and extending to PlayStation and PC games—and they still shape the way I think about fun, emotion, structure, and interaction. I am drawn to work that feels both well built and genuinely alive to the people using it.',
+      'I study aesthetics, clothing and textiles, and industrial design at Seoul National University. Games have shaped the way I think for most of my life, not only in terms of play, but in how emotion, structure, rhythm, and interaction are designed. That way of thinking carries into the rest of my interests too, including fashion, languages, and music.',
     previewCards: [
       {
         label: 'Introduction',
         title: 'Who I am',
-        copy: 'A student at Seoul National University studying aesthetics, clothing and textiles, and industrial design, with a long-standing love for games and interactive experiences.',
-        points: ['Aesthetics', 'Industrial Design']
+        copy: 'A student at Seoul National University with a long-standing interest in games, interaction, fashion, and cross-disciplinary design.',
+        points: ['Games', 'Cross-Disciplinary Design']
       },
       {
         label: 'Experience',
         title: 'What has shaped me',
-        copy: 'I learn best by stepping into unfamiliar situations, working seriously, and turning uncertainty into something real.',
+        copy: 'I grow most when I step into unfamiliar situations, learn quickly, and turn uncertainty into something real.',
         points: ['Fashion Show', 'Festival Planning']
       },
       {
         label: 'Approach',
         title: 'How I work',
-        copy: "I care about responsibility, deep learning, and respectful communication. I try to listen well, understand other people's fields, and build work that earns trust.",
+        copy: 'I care about responsibility, depth, and respectful communication. I try to listen well, learn how other people work, and build trust through the process, not just the final result.',
         points: ['Responsibility', 'Listening']
       }
     ],
@@ -316,7 +316,7 @@ const portfolioData = {
         heading: 'Stepping Into Fashion',
         type: 'paragraph',
         content:
-          "One experience that shaped me deeply was participating in my school's graduation fashion show before I knew how to make clothes. I loved fashion, but I had never learned garment construction. Instead of waiting until I felt qualified, I emailed the professor directly and asked for a chance. I did not want to fall behind. Through steady effort, I completed three looks and later took on the role of planning team leader. That experience taught me that passion only becomes meaningful when it is matched by action, discipline, and responsibility."
+          "One experience that shaped me deeply was joining my school's graduation fashion show before I knew how to make clothes. I loved fashion, but I had never learned garment construction. Instead of waiting until I felt ready, I contacted the professor directly and asked for a chance. Through steady effort, I completed three looks and later became planning team leader. That experience taught me that interest only becomes meaningful when it is carried by action, discipline, and responsibility."
       },
       {
         heading: 'Designing Fun Under Constraints',
@@ -328,7 +328,7 @@ const portfolioData = {
         heading: 'Small Acts That Matter',
         type: 'paragraph',
         content:
-          'Alongside project work, I have also done meal-service volunteering and donated meal tickets during small gaps in my school day. It became a quiet but meaningful part of my routine. Experiences like this remind me that kindness is not separate from creative work. The way we speak, listen, and treat other people shapes collaboration just as much as any technical skill.'
+          'Alongside project work, I also spent small pockets of time volunteering through meal service and donating meal vouchers. It was quiet work, but meaningful. It reminded me that kindness is not separate from creative work; the way we speak, listen, and treat people shapes collaboration just as much as technical skill.'
       },
       {
         heading: 'How I Work',
@@ -363,9 +363,9 @@ const portfolioData = {
         content: ['Games', 'Fashion', 'Foreign Languages', 'Music', 'Community-minded work']
       },
       {
-        heading: 'What People Would Feel',
+        heading: 'What I Want My Work to Feel Like',
         type: 'paragraph',
-        content: "I hope my work feels thoughtful, alive, and generous—clear enough to use with ease, but warm enough to stay in people's memory."
+        content: "I want my work to feel thoughtful, alive, and generous—clear enough to use easily, but warm enough to stay in people's memory."
       }
     ]
   }
