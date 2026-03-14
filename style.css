@@ -304,6 +304,18 @@ a {
   min-height: 100%;
 }
 
+.about-card .card-top {
+  position: relative;
+  padding-right: 30px;
+}
+
+.about-card .card-arrow {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  line-height: 1;
+}
+
 .card-top,
 .preview-card-top {
   display: flex;
@@ -334,12 +346,9 @@ a {
 
 .card-arrow {
   flex-shrink: 0;
-  align-self: flex-start;
-  margin-top: 2px;
   color: var(--accent);
   font-size: 1.4rem;
   font-weight: 800;
-  line-height: 1;
 }
 
 .project-meta,
@@ -420,14 +429,6 @@ a {
 
 .preview-points {
   margin-top: 18px;
-}
-
-.detail-preview-block .about-preview {
-  margin-top: 18px;
-}
-
-.about-preview-detail {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .contact-section {
@@ -921,10 +922,6 @@ a {
   color: var(--text);
   font-size: 0.88rem;
   font-weight: 800;
-}
-
-.about-preview-detail .project-copy {
-  margin-bottom: 0;
 }
 
 @media (max-width: 980px) {
