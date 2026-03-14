@@ -297,12 +297,21 @@ a {
   box-shadow: 0 20px 46px rgba(48, 36, 20, 0.1);
 }
 
+.about-card {
+  min-height: 100%;
+}
+
 .card-top,
 .preview-card-top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
+}
+
+.card-heading {
+  display: grid;
+  gap: 10px;
 }
 
 .project-card h3,
@@ -314,7 +323,8 @@ a {
   margin: 0;
 }
 
-.project-card h3 {
+.project-card h3,
+.preview-card h3 {
   font-size: 1.9rem;
   letter-spacing: -0.04em;
 }
@@ -336,6 +346,10 @@ a {
   gap: 10px;
 }
 
+.project-meta-inline {
+  margin-top: 2px;
+}
+
 .project-meta span,
 .project-tags span,
 .detail-tags span,
@@ -355,7 +369,7 @@ a {
 .about-preview {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 22px;
 }
 
 .preview-card,

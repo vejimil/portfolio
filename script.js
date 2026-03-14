@@ -174,22 +174,22 @@ const portfolioData = {
     {
       id: 'arcade-games',
       page: 'arcade-games.html',
-      label: 'Arcade Prototype Collection',
+      label: 'Arcade Game Collection',
       title: 'Arcade Games',
       blurb:
-        'A two-player arcade prototype collection built to create quick, satisfying fun in a limited offline environment.',
+        'A two-player arcade game collection built to create quick, satisfying fun in a limited offline environment.',
       caption:
         'Made for short local play sessions, then tuned through immediate feedback from the people actually playing them.',
       meta: ['Local Multiplayer', 'Gameplay Feel', 'Rapid Iteration'],
-      tags: ['Arcade Design', 'Feedback-Driven Tuning', 'Prototype Development'],
+      tags: ['Arcade Design', 'Feedback-Driven Tuning', 'Game Development'],
       detail: {
         kicker: 'Project Group',
-        subtitle: 'Two-player arcade prototypes designed to discover how much fun can grow from simple rules and tight iteration.',
+        subtitle: 'Two-player arcade games designed to show how much fun can grow from simple rules and tight iteration.',
         summary:
-          'Arcade Games is a grouped project page for prototypes I built around a simple question: how can a small game become genuinely fun in a restricted environment? During leisure time in the military, phone use and network access were limited, so I made lightweight local two-player games that colleagues could enjoy together on a single screen.',
+          'Arcade Games is a grouped project page for games I built around a simple question: how can a small game become genuinely fun in a restricted environment? During leisure time in the military, phone use and network access were limited, so I made lightweight local two-player games that colleagues could enjoy together on a single screen.',
         overview: [
           'These games were shaped by constraint. They were not built for long online sessions or large-scale content, but for quick moments of play in an offline setting where accessibility, clarity, and instant fun mattered most.',
-          'For this portfolio version, I also ported the prototypes into browser-playable JavaScript versions so visitors can move beyond watching a video preview and immediately try the games themselves with a single click.',
+          'For this portfolio version, I also ported the games into browser-playable JavaScript versions so visitors can move beyond watching a video preview and immediately try them with a single click.',
           'That limitation became a useful design lens. Starting from classic game structures and very simple forms, I explored what actually creates excitement: pacing, impact, variation, readable rules, and the feeling that every small input matters.'
         ],
         sections: [
@@ -197,7 +197,7 @@ const portfolioData = {
             heading: 'Core idea',
             type: 'paragraph',
             content:
-              'This project began with a practical situation: in a place where both devices and network conditions were limited, I wanted to make games that could still create shared fun. That led me to compact two-player prototypes designed for one screen, quick setup, and immediate understanding. Rather than relying on scale, I focused on creating enjoyment inside a limited space.'
+              'This project began with a practical situation: in a place where both devices and network conditions were limited, I wanted to make games that could still create shared fun. That led me to compact two-player games designed for one screen, quick setup, and immediate understanding. Rather than relying on scale, I focused on creating enjoyment inside a limited space.'
           },
           {
             heading: 'Design focus',
@@ -491,20 +491,17 @@ function renderHomeProjects() {
       (project) => `
         <a class="project-card reveal" href="${project.page}">
           <div class="card-top">
-            <div>
+            <div class="card-heading">
               <span class="card-label">${project.label}</span>
               <h3>${project.title}</h3>
+              <div class="project-meta project-meta-inline">
+                ${project.meta.slice(0, 3).map((item) => `<span>${item}</span>`).join('')}
+              </div>
             </div>
             <span class="card-arrow" aria-hidden="true">↗</span>
           </div>
           <p class="project-copy">${project.blurb}</p>
           <p class="project-caption">${project.caption}</p>
-          <div class="project-meta">
-            ${project.meta.map((item) => `<span>${item}</span>`).join('')}
-          </div>
-          <div class="project-tags">
-            ${project.tags.map((item) => `<span>${item}</span>`).join('')}
-          </div>
         </a>
       `
     )
@@ -518,14 +515,19 @@ function renderAboutPreview() {
   preview.innerHTML = portfolioData.about.previewCards
     .map(
       (item) => `
-        <article class="preview-card reveal">
-          <span class="preview-label">${item.label}</span>
-          <h3>${item.title}</h3>
-          <p class="preview-copy">${item.copy}</p>
-          <div class="preview-points">
-            ${item.points.map((point) => `<span class="section-chip">${point}</span>`).join('')}
+        <a class="project-card about-card reveal" href="about.html">
+          <div class="card-top">
+            <div class="card-heading">
+              <span class="card-label">${item.label}</span>
+              <h3>${item.title}</h3>
+              <div class="project-meta project-meta-inline">
+                ${item.points.slice(0, 3).map((point) => `<span>${point}</span>`).join('')}
+              </div>
+            </div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
           </div>
-        </article>
+          <p class="project-copy">${item.copy}</p>
+        </a>
       `
     )
     .join('');
