@@ -171,6 +171,122 @@ const portfolioData = {
         ]
       }
     },
+
+    {
+      id: 'triends',
+      page: 'triends.html',
+      label: 'Co-op Adventure Game',
+      title: 'Triends',
+      blurb:
+        'A two-player 2D adventure game where human technology and plant powers combine to solve environmental puzzles.',
+      caption:
+        'Built as a team project during military service, with my role spanning planning, character design, light-puzzle level design, and development.',
+      meta: ['Co-op Adventure', 'Pixel Character Design', 'Puzzle Level Design'],
+      tags: ['Co-op Adventure', 'Pixel Character Design', 'Puzzle Level Design'],
+      detail: {
+        kicker: 'Team Project',
+        subtitle: 'A cooperative 2D adventure shaped by constraint, teamwork, AI-assisted asset making, and light-based puzzle design.',
+        summary:
+          'Triends is a two-player 2D adventure game about an astronaut stranded on a plant planet and the local character Insam journeying together through puzzles and obstacles. The astronaut uses human technology while Insam uses plant-based abilities, so the game was designed around cooperation, contrast, and complementary actions.',
+        overview: [
+          'This was a team project built with one teammate during military service. We joined a contest connected to the AI asset-making tool GameAIfy, while working under clear limitations: a restricted environment, no access to a full professional production setup, and little prior experience with this kind of direct game-art workflow.',
+          'Because of those constraints, the project became an experiment in making something expressive with the tools we could access. We used Phaser for development, mixed AI-assisted asset generation with manual editing, and kept refining the project until the characters, movement, and puzzle ideas felt intentional rather than merely generated.'
+        ],
+        media: [
+          {
+            src: 'triends-reference.jpg',
+            alt: 'Reference sheet showing top-down four-direction pixel character movement inspiration.',
+            title: 'Movement Reference and Direction Study',
+            caption:
+              'Before settling the final character work, I studied readable four-direction sprite language and how movement could stay clear in a small top-down pixel scale.'
+          },
+          {
+            src: 'triends-character-sheet.png',
+            alt: 'Astronaut pixel character sheet including front, side, and back views and a mirror-carrying walking pose.',
+            title: 'Astronaut Character Sheet',
+            caption:
+              'The final astronaut sprite grew from AI-assisted concept generation into a manually adjusted pixel character sheet, including custom edits for poses and interaction states.'
+          },
+          {
+            src: 'triends-pixel-edit.jpg',
+            alt: 'Pixel-art editing process image showing direct manual dot work on the character design.',
+            title: 'Manual Pixel Editing',
+            caption:
+              'Because AI could not fully produce the exact style or motion I wanted, I edited the sprite work by hand, adding and cleaning pixels until the result felt closer to the intended character.'
+          }
+        ],
+        sections: [
+          {
+            heading: 'Project setup',
+            type: 'list',
+            content: [
+              'Built as a two-person team project during military service',
+              'Created for a contest related to the AI asset tool GameAIfy',
+              'Developed in Phaser under practical production constraints',
+              'Designed as a cooperative 2D adventure rather than a single-character puzzle game'
+            ]
+          },
+          {
+            heading: 'My role',
+            type: 'paragraph',
+            content:
+              'I worked across planning, character design, level design, and development. That meant helping define the game concept, shaping the visual direction of the characters, building the light-puzzle section, and contributing directly to implementation rather than staying only at the concept stage.'
+          },
+          {
+            heading: 'Prototype and direction',
+            type: 'paragraph',
+            media: {
+              type: 'video',
+              src: 'triends-prototype.mp4'
+            },
+            content:
+              'The early prototype helped us test whether the world, characters, and cooperative structure could feel coherent. More than just proving that the game worked, it let us check whether the contrast between technology and plant power could create a distinctive identity.'
+          },
+          {
+            heading: 'Character design process',
+            type: 'paragraph',
+            content:
+              'I began by defining the character concept and repeatedly prompting AI tools to push toward the look I wanted. But the generated output never fully matched my intent. To close that gap, I manually edited the sprites, added pixel details myself, and adjusted motion frames on top of the generated base. That process taught me how to use AI as a starting point rather than a final answer.'
+          },
+          {
+            heading: 'Light-based puzzle level design',
+            type: 'paragraph',
+            media: {
+              type: 'video',
+              src: 'triends-light-gimmick.mp4'
+            },
+            content:
+              'I designed the light section of the game. It was inspired by the image of a sunflower-like light plant: in this part, Insam can transform into a sunflower and fire light, while the astronaut can hold a mirror and split the beam. I designed the level flow so players first learn the simplest version of the mechanic, then gradually rely on beam-splitting and more deliberate coordination to reach the goal. The puzzle logic was not just “harder over time.” I wanted the layout to teach the gimmick, deepen it, and finally require both characters to use their own roles well for the stage to feel fair and satisfying.'
+          },
+          {
+            heading: 'What I learned',
+            type: 'paragraph',
+            content:
+              'This project taught me several things at once: how to collaborate with a teammate for the first time, how to establish shared coding rules and working habits, how to turn AI output into something more intentional through editing, and how to think about level design as player experience rather than just obstacle placement. It also gave me the satisfaction of seeing a character move naturally after hands-on sprite and animation work.'
+          }
+        ],
+        sidebar: {
+          role: 'Planning, Character Design, Light-Puzzle Level Design, Development',
+          stack: ['Phaser', 'Co-op Puzzle Design', 'Pixel Art Editing', 'AI-Assisted Asset Workflow', 'Team Collaboration'],
+          notes: [
+            'Built with one teammate during military service',
+            'Created for a GameAIfy-related contest under production constraints',
+            'Combined AI-generated starting points with manual pixel editing and animation adjustment',
+            'Designed so both player characters needed to use their own abilities to progress'
+          ]
+        },
+        links: [
+          {
+            label: 'Watch Prototype Clip',
+            href: 'triends-prototype.mp4'
+          },
+          {
+            label: 'Watch Light Puzzle Clip',
+            href: 'triends-light-gimmick.mp4'
+          }
+        ]
+      }
+    },
     {
       id: 'arcade-games',
       page: 'arcade-games.html',
