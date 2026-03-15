@@ -190,7 +190,7 @@ const portfolioData = {
           'Triends is a two-player 2D adventure game about an astronaut stranded on a plant planet and the local character Insam journeying together through puzzles and obstacles. The astronaut uses human technology while Insam uses plant-based abilities, so the game was designed around cooperation, contrast, and complementary actions.',
         overview: [
           'This was a team project built with one teammate during military service. We joined a contest connected to the AI asset-making tool GameAIfy, while working under clear limitations: a restricted environment, no access to a full professional production setup, and little prior experience with this kind of direct game-art workflow.',
-          'Because of those constraints, the project became an experiment in making something expressive with the tools we could access. We used Phaser for development, mixed AI-assisted asset generation with manual editing, and kept refining the project until the characters, movement, and puzzle ideas felt intentional rather than merely generated.'
+          'Because of those constraints, the project became an experiment in making something expressive with the tools we could access. We used Phaser for development, mixed AI-assisted asset generation with manual editing, and kept refining the project until the characters, movement, and puzzle ideas felt intentional rather than merely generated. For this portfolio, I later separated the Light Village mechanic into a smaller browser-playable extraction so the puzzle can be tried directly.'
         ],
         media: [
           {
@@ -255,8 +255,15 @@ const portfolioData = {
               type: 'video',
               src: 'triends-light-gimmick.mp4'
             },
+            actions: [
+              {
+                label: 'Play Light Village Demo',
+                href: 'triends-light-demo.html',
+                kind: 'primary'
+              }
+            ],
             content:
-              'I designed the light section of the game. It was inspired by the image of a sunflower-like light plant: in this part, Insam can transform into a sunflower and fire light, while the astronaut can hold a mirror and split the beam. I designed the level flow so players first learn the simplest version of the mechanic, then gradually rely on beam-splitting and more deliberate coordination to reach the goal. The puzzle logic was not just “harder over time.” I wanted the layout to teach the gimmick, deepen it, and finally require both characters to use their own roles well for the stage to feel fair and satisfying.'
+              'I designed the light section of the game. It was inspired by the image of a sunflower-like light plant: in this part, Insam can transform into a sunflower and fire light, while the astronaut can hold a mirror and split the beam. I designed the level flow so players first learn the simplest version of the mechanic, then gradually rely on beam-splitting and more deliberate coordination to reach the goal. The puzzle logic was not just “harder over time.” I wanted the layout to teach the gimmick, deepen it, and finally require both characters to use their own roles well for the stage to feel fair and satisfying. For this portfolio version, I also extracted a smaller standalone Light Village demo so visitors can try the core interaction directly in the browser.'
           },
           {
             heading: 'What I learned',
@@ -276,6 +283,10 @@ const portfolioData = {
           ]
         },
         links: [
+          {
+            label: 'Play Light Village Demo',
+            href: 'triends-light-demo.html'
+          },
           {
             label: 'Watch Prototype Clip',
             href: 'triends-prototype.mp4'
